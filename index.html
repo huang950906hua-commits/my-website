@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#090504" />
-  <title>紅中娛樂城</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080403">
+
+  <title>紅中娛樂城｜官方入口</title>
 
   <style>
     * {
@@ -18,43 +19,98 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        "Microsoft JhengHei", sans-serif;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Microsoft JhengHei",
+        Arial,
+        sans-serif;
+
       color: #fff;
+
       background:
-        radial-gradient(circle at 50% -10%, rgba(145, 27, 16, 0.45), transparent 35%),
-        radial-gradient(circle at 10% 35%, rgba(120, 20, 10, 0.18), transparent 28%),
-        linear-gradient(180deg, #120605 0%, #080505 45%, #030303 100%);
+        radial-gradient(
+          circle at 50% -10%,
+          rgba(150, 30, 15, 0.45),
+          transparent 35%
+        ),
+        radial-gradient(
+          circle at 10% 35%,
+          rgba(110, 20, 10, 0.18),
+          transparent 28%
+        ),
+        linear-gradient(
+          180deg,
+          #130605 0%,
+          #080505 45%,
+          #030303 100%
+        );
+
       min-height: 100vh;
       overflow-x: hidden;
     }
+
+
+    /* =========================
+       背景光效
+    ========================= */
 
     body::before {
       content: "";
       position: fixed;
       inset: 0;
       pointer-events: none;
+
       background:
-        radial-gradient(circle at 20% 20%, rgba(255, 170, 45, 0.05), transparent 25%),
-        radial-gradient(circle at 80% 30%, rgba(255, 60, 20, 0.05), transparent 25%);
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(255, 170, 45, 0.05),
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at 80% 30%,
+          rgba(255, 60, 20, 0.05),
+          transparent 25%
+        );
+
       z-index: 0;
     }
+
+
+    /* =========================
+       主容器
+    ========================= */
 
     .site {
       position: relative;
       z-index: 1;
+
       width: 100%;
       max-width: 520px;
+
       margin: 0 auto;
+
       min-height: 100vh;
+
       background: rgba(0, 0, 0, 0.08);
-      box-shadow: 0 0 60px rgba(0,0,0,0.35);
+
+      box-shadow:
+        0 0 60px rgba(0, 0, 0, 0.35);
     }
+
+
+    /* =========================
+       HERO 主視覺
+    ========================= */
 
     .hero {
       position: relative;
-      height: 620px;
+
+      height: 610px;
+
       overflow: hidden;
+
       border-bottom-left-radius: 34px;
       border-bottom-right-radius: 34px;
     }
@@ -62,502 +118,1176 @@
     .hero img {
       width: 100%;
       height: 100%;
+
       object-fit: cover;
       object-position: center 42%;
+
       transform: scale(1.03);
-      animation: heroZoom 10s ease-in-out infinite alternate;
+
+      animation:
+        heroZoom 10s ease-in-out infinite alternate;
     }
 
     @keyframes heroZoom {
-      from { transform: scale(1.03); }
-      to { transform: scale(1.08); }
+      from {
+        transform: scale(1.03);
+      }
+
+      to {
+        transform: scale(1.08);
+      }
     }
+
 
     .hero::after {
       content: "";
+
       position: absolute;
       inset: 0;
+
       background:
         linear-gradient(
           180deg,
-          rgba(0,0,0,0.02) 0%,
-          rgba(0,0,0,0.08) 42%,
-          rgba(10,4,3,0.58) 72%,
+          rgba(0, 0, 0, 0.02) 0%,
+          rgba(0, 0, 0, 0.06) 40%,
+          rgba(10, 4, 3, 0.60) 72%,
           #090504 100%
         );
     }
 
+
+    /* 光暈 */
+
     .hero-glow {
       position: absolute;
-      width: 220px;
-      height: 220px;
+
+      width: 230px;
+      height: 230px;
+
       border-radius: 50%;
-      background: rgba(255, 150, 30, 0.13);
-      filter: blur(50px);
+
+      background:
+        rgba(255, 150, 30, 0.14);
+
+      filter: blur(55px);
+
       right: -40px;
       top: 100px;
+
       z-index: 1;
-      animation: floatGlow 5s ease-in-out infinite;
+
+      animation:
+        floatGlow 5s ease-in-out infinite;
     }
 
     @keyframes floatGlow {
-      0%, 100% { transform: translateY(0); opacity: .55; }
-      50% { transform: translateY(22px); opacity: .9; }
+
+      0%,
+      100% {
+        transform: translateY(0);
+        opacity: 0.55;
+      }
+
+      50% {
+        transform: translateY(22px);
+        opacity: 0.9;
+      }
     }
+
+
+    /* HERO 文字 */
 
     .hero-content {
       position: absolute;
+
       left: 0;
       right: 0;
       bottom: 34px;
+
       z-index: 2;
+
       padding: 0 24px;
+
       text-align: center;
     }
 
+
     .brand-chip {
       display: inline-flex;
+
       align-items: center;
+
       gap: 8px;
+
       padding: 8px 16px;
+
       border-radius: 999px;
-      border: 1px solid rgba(255, 205, 92, 0.35);
-      background: rgba(12, 7, 5, 0.56);
+
+      border:
+        1px solid rgba(255, 205, 92, 0.35);
+
+      background:
+        rgba(12, 7, 5, 0.56);
+
       backdrop-filter: blur(10px);
+
       font-size: 12px;
+
       letter-spacing: 3px;
+
       color: #ffd878;
+
       margin-bottom: 14px;
-      box-shadow: inset 0 1px rgba(255,255,255,.06);
+
+      box-shadow:
+        inset 0 1px rgba(255, 255, 255, 0.06);
     }
+
 
     .brand-chip::before {
       content: "中";
-      display: inline-grid;
+
+      display: grid;
       place-items: center;
+
       width: 22px;
       height: 22px;
+
       border-radius: 7px;
-      background: linear-gradient(145deg, #ffca5f, #b85d0f);
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffca5f,
+          #b85d0f
+        );
+
       color: #3d0d08;
+
       font-weight: 900;
+
       letter-spacing: 0;
+
       font-size: 12px;
     }
 
+
     h1 {
       font-size: 38px;
+
       font-weight: 900;
+
       letter-spacing: 3px;
+
       line-height: 1.18;
-      background: linear-gradient(180deg, #fff3bd 0%, #ffd35f 38%, #b55a16 100%);
+
+      background:
+        linear-gradient(
+          180deg,
+          #fff3bd 0%,
+          #ffd35f 38%,
+          #b55a16 100%
+        );
+
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 0 8px 30px rgba(0,0,0,.4);
+
+      text-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.4);
     }
+
 
     .slogan {
       margin-top: 12px;
+
       font-size: 16px;
+
       color: #f6ead4;
+
       letter-spacing: 2px;
+
       line-height: 1.7;
     }
 
+
+    /* =========================
+       內容
+    ========================= */
+
     .content {
-      padding: 26px 20px 110px;
+      padding:
+        26px
+        20px
+        115px;
     }
+
 
     .section {
       margin-top: 22px;
-      animation: fadeUp .7s ease both;
+
+      animation:
+        fadeUp 0.7s ease both;
     }
+
 
     @keyframes fadeUp {
       from {
         opacity: 0;
         transform: translateY(16px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
 
+
     .section-title {
       display: flex;
+
       align-items: center;
+
       gap: 10px;
+
       margin-bottom: 14px;
-      font-size: 14px;
+
+      font-size: 13px;
+
       letter-spacing: 2px;
+
       color: #e3b45a;
+
       font-weight: 700;
     }
 
+
     .section-title::before {
       content: "";
+
       width: 26px;
       height: 2px;
-      background: linear-gradient(90deg, #f5bd45, transparent);
+
+      background:
+        linear-gradient(
+          90deg,
+          #f5bd45,
+          transparent
+        );
     }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
 
     .about {
       padding: 20px;
+
       border-radius: 22px;
+
       background:
-        linear-gradient(145deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      border: 1px solid rgba(255, 199, 77, 0.12);
-      box-shadow: 0 14px 35px rgba(0,0,0,.22);
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.06),
+          rgba(255, 255, 255, 0.02)
+        );
+
+      border:
+        1px solid rgba(255, 199, 77, 0.12);
+
+      box-shadow:
+        0 14px 35px rgba(0, 0, 0, 0.22);
+
       backdrop-filter: blur(10px);
+
       color: #c7bbb0;
+
       font-size: 14px;
+
       line-height: 1.9;
     }
 
+
+    /* =========================
+       三個特色
+    ========================= */
+
     .highlights {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 10px;
+
       margin-top: 14px;
     }
 
+
     .highlight {
       padding: 16px 10px;
+
       text-align: center;
+
       border-radius: 18px;
-      background: rgba(255,255,255,.035);
-      border: 1px solid rgba(255, 197, 74, .1);
+
+      background:
+        rgba(255, 255, 255, 0.035);
+
+      border:
+        1px solid rgba(255, 197, 74, 0.1);
     }
+
 
     .highlight strong {
       display: block;
+
       color: #ffd76f;
+
       font-size: 16px;
+
       margin-bottom: 5px;
     }
 
+
     .highlight span {
       color: #8f837d;
+
       font-size: 11px;
     }
+
+
+    /* =========================
+       連結區
+    ========================= */
 
     .links {
       display: flex;
+
       flex-direction: column;
+
       gap: 13px;
     }
 
+
     .link {
       position: relative;
+
       display: flex;
+
       align-items: center;
-      min-height: 74px;
+
+      min-height: 76px;
+
       padding: 0 18px;
+
       text-decoration: none;
+
       color: #fff;
+
       border-radius: 20px;
+
       background:
         linear-gradient(
           135deg,
-          rgba(255,255,255,.07),
-          rgba(255,255,255,.025)
+          rgba(255, 255, 255, 0.07),
+          rgba(255, 255, 255, 0.025)
         );
-      border: 1px solid rgba(255, 198, 74, .15);
+
+      border:
+        1px solid rgba(255, 198, 74, 0.15);
+
       box-shadow:
-        0 14px 34px rgba(0,0,0,.28),
-        inset 0 1px rgba(255,255,255,.05);
+        0 14px 34px rgba(0, 0, 0, 0.28),
+        inset 0 1px rgba(255, 255, 255, 0.05);
+
       backdrop-filter: blur(10px);
-      transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+
+      transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
     }
 
+
     .link:active {
-      transform: scale(.98);
+      transform: scale(0.98);
     }
+
 
     .link:hover {
       transform: translateY(-3px);
-      border-color: rgba(255, 199, 71, .5);
-      box-shadow: 0 16px 38px rgba(125, 35, 10, .22);
+
+      border-color:
+        rgba(255, 199, 71, 0.5);
+
+      box-shadow:
+        0 16px 38px rgba(125, 35, 10, 0.22);
     }
+
+
+    /* 第一個紅中按鈕 */
 
     .main-link {
       background:
-        linear-gradient(135deg, rgba(121, 22, 11, .96), rgba(42, 8, 5, .94));
-      border-color: rgba(255, 188, 68, .42);
+        linear-gradient(
+          135deg,
+          rgba(121, 22, 11, 0.96),
+          rgba(42, 8, 5, 0.94)
+        );
+
+      border-color:
+        rgba(255, 188, 68, 0.42);
     }
+
+
+    /* =========================
+       圖示共同設定
+    ========================= */
 
     .icon {
-      width: 44px;
-      height: 44px;
+      width: 46px;
+      height: 46px;
+
       flex-shrink: 0;
+
       display: grid;
+
       place-items: center;
+
       border-radius: 14px;
+
       margin-right: 14px;
-      background: linear-gradient(145deg, #42110c, #170706);
-      border: 1px solid rgba(255, 198, 74, .2);
+
+      background:
+        linear-gradient(
+          145deg,
+          #42110c,
+          #170706
+        );
+
+      border:
+        1px solid rgba(255, 198, 74, 0.2);
+
       color: #ffd25b;
+
       font-weight: 900;
+
       font-size: 13px;
-      box-shadow: inset 0 1px rgba(255,255,255,.05);
+
+      box-shadow:
+        inset 0 1px rgba(255, 255, 255, 0.05);
     }
 
+
+    /* 紅中圖示 */
+
     .main-link .icon {
-      background: linear-gradient(145deg, #ffd267, #b25810);
+      background:
+        linear-gradient(
+          145deg,
+          #ffd267,
+          #b25810
+        );
+
       color: #351008;
-      box-shadow: 0 5px 18px rgba(255, 166, 35, .18);
+
+      box-shadow:
+        0 5px 18px rgba(255, 166, 35, 0.18);
     }
+
+
+    /* =========================
+       社群 SVG
+    ========================= */
+
+    .social-icon {
+      padding: 0;
+
+      overflow: hidden;
+    }
+
+
+    .social-icon svg {
+      width: 25px;
+      height: 25px;
+    }
+
+
+    /* LINE */
+
+    .line-icon {
+      background: #06C755;
+
+      border:
+        1px solid rgba(255, 255, 255, 0.14);
+
+      box-shadow:
+        0 5px 16px rgba(6, 199, 85, 0.16);
+    }
+
+
+    .line-icon svg {
+      fill: #ffffff;
+    }
+
+
+    /* Instagram */
+
+    .instagram-icon {
+      background:
+        radial-gradient(
+          circle at 30% 100%,
+          #ffd600 0%,
+          #ff7a00 25%,
+          #ff0169 50%,
+          #d300c5 75%,
+          #7638fa 100%
+        );
+
+      border:
+        1px solid rgba(255, 255, 255, 0.15);
+
+      box-shadow:
+        0 5px 16px rgba(255, 0, 105, 0.15);
+    }
+
+
+    .instagram-icon svg {
+      fill: none;
+
+      stroke: #ffffff;
+
+      stroke-width: 2;
+
+      stroke-linecap: round;
+
+      stroke-linejoin: round;
+    }
+
+
+    /* Threads */
+
+    .threads-icon {
+      background: #ffffff;
+
+      border:
+        1px solid rgba(255, 255, 255, 0.3);
+
+      box-shadow:
+        0 5px 16px rgba(255, 255, 255, 0.08);
+    }
+
+
+    .threads-icon svg {
+      fill: #000000;
+    }
+
+
+    /* =========================
+       連結文字
+    ========================= */
 
     .link-copy {
       min-width: 0;
+
       text-align: left;
     }
 
+
     .link-title {
       display: block;
+
       font-size: 16px;
+
       font-weight: 800;
-      letter-spacing: .3px;
+
+      letter-spacing: 0.3px;
     }
+
 
     .link-subtitle {
       display: block;
+
       margin-top: 4px;
+
       font-size: 11px;
+
       color: #8e817b;
     }
 
+
     .arrow {
       margin-left: auto;
+
+      padding-left: 10px;
+
       font-size: 24px;
+
       color: #d9aa4e;
+
       line-height: 1;
     }
 
+
+    /* =========================
+       FOOTER
+    ========================= */
+
     .footer {
       margin-top: 34px;
+
       text-align: center;
+
       color: #514843;
+
       font-size: 11px;
+
       line-height: 1.8;
     }
 
+
     .footer strong {
       color: #8f6b34;
+
       font-weight: 600;
     }
 
+
+    /* =========================
+       手機底部固定按鈕
+    ========================= */
+
     .floating-contact {
       position: fixed;
+
       left: 50%;
       bottom: 14px;
-      transform: translateX(-50%);
+
+      transform:
+        translateX(-50%);
+
       z-index: 20;
-      width: calc(100% - 28px);
+
+      width:
+        calc(100% - 28px);
+
       max-width: 492px;
+
       display: flex;
+
       gap: 10px;
+
       padding: 10px;
+
       border-radius: 20px;
-      background: rgba(8,5,4,.78);
-      border: 1px solid rgba(255, 192, 65, .16);
-      backdrop-filter: blur(14px);
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+
+      background:
+        rgba(8, 5, 4, 0.82);
+
+      border:
+        1px solid rgba(255, 192, 65, 0.16);
+
+      backdrop-filter: blur(16px);
+
+      -webkit-backdrop-filter:
+        blur(16px);
+
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4);
     }
+
 
     .floating-contact a {
       flex: 1;
-      min-height: 48px;
-      display: grid;
-      place-items: center;
+
+      min-height: 50px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 7px;
+
       border-radius: 14px;
+
       text-decoration: none;
+
       font-size: 14px;
+
       font-weight: 800;
+
+      letter-spacing: 0.5px;
     }
+
+
+    /* 平台網址 */
 
     .floating-contact .site-btn {
-      background: linear-gradient(135deg, #842113, #3d0d08);
+      background:
+        linear-gradient(
+          135deg,
+          #842113,
+          #3d0d08
+        );
+
       color: #ffd876;
-      border: 1px solid rgba(255, 200, 76, .35);
+
+      border:
+        1px solid rgba(255, 200, 76, 0.35);
     }
 
+
+    /* LINE註冊 */
+
     .floating-contact .line-btn {
-      background: linear-gradient(135deg, #ffd366, #b85b0d);
+      background:
+        linear-gradient(
+          135deg,
+          #ffd366,
+          #b85b0d
+        );
+
       color: #2d0c07;
     }
 
+
+    /* =========================
+       手機
+    ========================= */
+
     @media (max-width: 420px) {
+
       .hero {
         height: 560px;
       }
 
+
       h1 {
         font-size: 34px;
       }
+
 
       .content {
         padding-left: 16px;
         padding-right: 16px;
       }
 
+
       .highlights {
         gap: 8px;
       }
+
 
       .highlight {
         padding-left: 6px;
         padding-right: 6px;
       }
+
+
+      .link {
+        min-height: 74px;
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+
+      .icon {
+        width: 44px;
+        height: 44px;
+        margin-right: 13px;
+      }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <main class="site">
 
-    <section class="hero">
-      <img src="hongzhong.png" alt="紅中娛樂城">
-      <div class="hero-glow"></div>
+<main class="site">
 
-      <div class="hero-content">
-        <div class="brand-chip">HONG ZHONG</div>
-        <h1>紅中娛樂城</h1>
-        <p class="slogan">黑網遇多了・紅中最保障</p>
-      </div>
-    </section>
 
-    <section class="content">
+  <!-- =====================
+       主視覺
+  ====================== -->
 
-      <div class="section">
-        <div class="section-title">ABOUT</div>
+  <section class="hero">
 
-        <div class="about">
-          歡迎來到紅中娛樂城。<br>
-          集中官方入口、社群資訊與聯絡方式，
-          讓你快速找到正確管道，不再四處尋找。
-        </div>
-
-        <div class="highlights">
-          <div class="highlight">
-            <strong>官方</strong>
-            <span>認明入口</span>
-          </div>
-
-          <div class="highlight">
-            <strong>快速</strong>
-            <span>一鍵聯絡</span>
-          </div>
-
-          <div class="highlight">
-            <strong>便利</strong>
-            <span>多平台整合</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title">OFFICIAL LINKS</div>
-
-        <div class="links">
-
-          <a
-            class="link main-link"
-            href="http://gm.fl8899.com/hz"
-            target="_blank"
-            rel="noopener"
-          >
-            <div class="icon">中</div>
-
-            <div class="link-copy">
-              <span class="link-title">紅中娛樂城</span>
-              <span class="link-subtitle">進入官方網站</span>
-            </div>
-
-            <span class="arrow">›</span>
-          </a>
-
-          <a
-            class="link"
-            href="https://lin.ee/U1eXXfK"
-            target="_blank"
-            rel="noopener"
-          >
-            <div class="icon">LINE</div>
-
-            <div class="link-copy">
-              <span class="link-title">官方 LINE</span>
-              <span class="link-subtitle">加入好友・快速聯絡</span>
-            </div>
-
-            <span class="arrow">›</span>
-          </a>
-
-          <a
-            class="link"
-            href="https://www.instagram.com/trun_888/"
-            target="_blank"
-            rel="noopener"
-          >
-            <div class="icon">IG</div>
-
-            <div class="link-copy">
-              <span class="link-title">Instagram</span>
-              <span class="link-subtitle">@trun_888</span>
-            </div>
-
-            <span class="arrow">›</span>
-          </a>
-
-          <a
-            class="link"
-            href="https://www.threads.com/@trun_888?igshid=NTc4MTIwNjQ2YQ=="
-            target="_blank"
-            rel="noopener"
-          >
-            <div class="icon">@</div>
-
-            <div class="link-copy">
-              <span class="link-title">Threads</span>
-              <span class="link-subtitle">@trun_888</span>
-            </div>
-
-            <span class="arrow">›</span>
-          </a>
-
-        </div>
-      </div>
-
-      <div class="footer">
-        <strong>紅中娛樂城 HONG ZHONG</strong><br>
-        Official Links
-      </div>
-
-    </section>
-
-  </main>
-
-  <div class="floating-contact">
-    <a
-      class="site-btn"
-      href="http://gm.fl8899.com/hz"
-      target="_blank"
-      rel="noopener"
+    <img
+      src="hongzhong.png"
+      alt="紅中娛樂城"
     >
-      平台網址
-    </a>
 
-    <a
-      class="line-btn"
-      href="https://lin.ee/U1eXXfK"
-      target="_blank"
-      rel="noopener"
-    >
-      立即註冊
-    </a>
-  </div>
+    <div class="hero-glow"></div>
+
+
+    <div class="hero-content">
+
+      <div class="brand-chip">
+        HONG ZHONG
+      </div>
+
+      <h1>
+        紅中娛樂城
+      </h1>
+
+      <p class="slogan">
+        黑網遇多了・紅中最保障
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================
+       主要內容
+  ====================== -->
+
+  <section class="content">
+
+
+    <!-- ABOUT -->
+
+    <div class="section">
+
+      <div class="section-title">
+        ABOUT
+      </div>
+
+
+      <div class="about">
+
+        歡迎來到紅中娛樂城。<br>
+
+        集中官方入口、社群資訊與聯絡方式，
+        讓你快速找到正確管道，不再四處尋找。
+
+      </div>
+
+
+      <div class="highlights">
+
+
+        <div class="highlight">
+
+          <strong>
+            官方
+          </strong>
+
+          <span>
+            認明入口
+          </span>
+
+        </div>
+
+
+        <div class="highlight">
+
+          <strong>
+            快速
+          </strong>
+
+          <span>
+            一鍵聯絡
+          </span>
+
+        </div>
+
+
+        <div class="highlight">
+
+          <strong>
+            便利
+          </strong>
+
+          <span>
+            多平台整合
+          </span>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+    <!-- 官方連結 -->
+
+    <div class="section">
+
+      <div class="section-title">
+        OFFICIAL LINKS
+      </div>
+
+
+      <div class="links">
+
+
+        <!-- 紅中娛樂城 -->
+
+        <a
+          class="link main-link"
+          href="http://gm.fl8899.com/hz"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div class="icon">
+            中
+          </div>
+
+
+          <div class="link-copy">
+
+            <span class="link-title">
+              紅中娛樂城
+            </span>
+
+            <span class="link-subtitle">
+              進入官方網站
+            </span>
+
+          </div>
+
+
+          <span class="arrow">
+            ›
+          </span>
+
+        </a>
+
+
+
+        <!-- LINE -->
+
+        <a
+          class="link"
+          href="https://lin.ee/U1eXXfK"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div class="icon social-icon line-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+
+              <path
+                d="M19.365 9.863c.077-.328.103-.668.103-1.016C19.468 4.516 15.13 1 9.797 1S.125 4.516.125 8.847c0 3.881 3.445 7.132 8.103 7.746.316.068.746.208.855.478.098.245.064.629.031.877l-.135.829c-.041.245-.19.957.829.522 1.019-.435 5.497-3.237 7.5-5.542 1.384-1.518 2.057-3.058 2.057-3.894z"
+              />
+
+            </svg>
+
+          </div>
+
+
+          <div class="link-copy">
+
+            <span class="link-title">
+              官方 LINE
+            </span>
+
+            <span class="link-subtitle">
+              加入好友・快速聯絡
+            </span>
+
+          </div>
+
+
+          <span class="arrow">
+            ›
+          </span>
+
+        </a>
+
+
+
+        <!-- Instagram -->
+
+        <a
+          class="link"
+          href="https://www.instagram.com/trun_888/"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div
+            class="icon social-icon instagram-icon"
+          >
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+              />
+
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+              />
+
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="white"
+                stroke="none"
+              />
+
+            </svg>
+
+          </div>
+
+
+          <div class="link-copy">
+
+            <span class="link-title">
+              Instagram
+            </span>
+
+            <span class="link-subtitle">
+              @trun_888
+            </span>
+
+          </div>
+
+
+          <span class="arrow">
+            ›
+          </span>
+
+        </a>
+
+
+
+        <!-- Threads -->
+
+        <a
+          class="link"
+          href="https://www.threads.com/@trun_888?igshid=NTc4MTIwNjQ2YQ=="
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div
+            class="icon social-icon threads-icon"
+          >
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+
+              <path
+                d="M12 2C6.5 2 3 5.7 3 11.9C3 18 6.4 22 12.1 22c5.2 0 8.9-3 8.9-7.4 0-3.2-1.8-5.3-5-6.1-.7-3-2.8-4.6-5.9-4.6-2.4 0-4.4.9-5.7 2.6l2.1 1.6c.9-1.2 2.1-1.8 3.6-1.8 1.7 0 2.8.7 3.3 2-4.6.1-7.2 2-7.2 5.1 0 2.6 2.1 4.4 5 4.4 3.1 0 5.2-1.8 5.2-4.5 0-.7-.1-1.4-.2-2 1.4.6 2.1 1.7 2.1 3.3 0 2.9-2.4 4.9-6.2 4.9-4.2 0-6.4-2.8-6.4-7.6 0-4.7 2.3-7.4 6.3-7.4 2.6 0 4.6 1 5.9 3l2.1-1.5C18.3 3.3 15.6 2 12 2zm-.7 13.4c-1.4 0-2.3-.7-2.3-1.8 0-1.5 1.5-2.4 4.6-2.5.1.5.2 1 .2 1.5 0 1.7-.9 2.8-2.5 2.8z"
+              />
+
+            </svg>
+
+          </div>
+
+
+          <div class="link-copy">
+
+            <span class="link-title">
+              Threads
+            </span>
+
+            <span class="link-subtitle">
+              @trun_888
+            </span>
+
+          </div>
+
+
+          <span class="arrow">
+            ›
+          </span>
+
+        </a>
+
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+      <strong>
+        紅中娛樂城 HONG ZHONG
+      </strong>
+
+      <br>
+
+      Official Links
+
+    </div>
+
+
+  </section>
+
+
+</main>
+
+
+
+<!-- =====================
+     底部固定按鈕
+====================== -->
+
+<div class="floating-contact">
+
+
+  <a
+    class="site-btn"
+    href="http://gm.fl8899.com/hz"
+    target="_blank"
+    rel="noopener"
+  >
+
+    平台網址
+
+  </a>
+
+
+  <a
+    class="line-btn"
+    href="https://lin.ee/U1eXXfK"
+    target="_blank"
+    rel="noopener"
+  >
+
+    LINE 註冊
+
+  </a>
+
+
+</div>
+
 
 </body>
 </html>
