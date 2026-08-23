@@ -2,18 +2,21 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <meta name="theme-color" content="#050403">
 
   <title>紅中娛樂城｜官方連結</title>
 
-  <meta name="description" content="紅中娛樂城官方連結">
-  <meta name="theme-color" content="#080403">
-
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
@@ -28,6 +31,7 @@
         "Segoe UI",
         "Noto Sans TC",
         "Microsoft JhengHei",
+        Arial,
         sans-serif;
 
       color: #ffffff;
@@ -35,156 +39,218 @@
       background:
         radial-gradient(
           circle at 50% 0%,
-          rgba(115, 18, 8, 0.28),
-          transparent 38%
+          rgba(117, 21, 8, 0.30),
+          transparent 36%
         ),
         linear-gradient(
           180deg,
-          #100403 0%,
-          #080403 38%,
-          #050505 100%
+          #100503 0%,
+          #070403 42%,
+          #020202 100%
         );
 
       padding-bottom: 110px;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-      -webkit-tap-highlight-color: transparent;
-    }
 
     /* =========================
-       主容器
+       整體容器
     ========================= */
 
     .page {
       width: 100%;
       max-width: 520px;
       margin: 0 auto;
-      padding: 0 16px 40px;
+      padding: 0 14px 40px;
     }
 
+
     /* =========================
-       頂部圖片
+       上方主視覺
     ========================= */
 
     .hero {
       position: relative;
       width: 100%;
+      height: 255px;
+
       overflow: hidden;
-      border-radius: 0 0 28px 28px;
+
+      border-radius: 0 0 24px 24px;
+
+      border-left: 1px solid rgba(231, 171, 45, 0.22);
+      border-right: 1px solid rgba(231, 171, 45, 0.22);
+      border-bottom: 1px solid rgba(231, 171, 45, 0.28);
+
       box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.55),
-        0 0 45px rgba(173, 67, 10, 0.13);
+        0 18px 50px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(177, 44, 13, 0.08);
+
+      background: #130604;
     }
 
     .hero img {
-      display: block;
       width: 100%;
-      height: auto;
+      height: 100%;
+
+      object-fit: cover;
+
+      /* 讓吉祥物重點比較容易留在畫面 */
+      object-position: center 45%;
+
+      display: block;
     }
 
     .hero::after {
       content: "";
+
       position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 45%;
+      inset: 0;
 
       background:
         linear-gradient(
-          to bottom,
-          transparent,
-          rgba(7, 3, 2, 0.96)
+          180deg,
+          transparent 40%,
+          rgba(5, 2, 1, 0.12) 60%,
+          rgba(5, 2, 1, 0.92) 100%
         );
 
       pointer-events: none;
     }
 
-    .hero-badge {
-      position: absolute;
-      z-index: 2;
-      bottom: 18px;
-      left: 50%;
-      transform: translateX(-50%);
+
+    /* =========================
+       品牌區
+    ========================= */
+
+    .brand {
+      text-align: center;
+      margin-top: -16px;
+
+      position: relative;
+      z-index: 5;
+    }
+
+    .brand-tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-width: 138px;
 
       padding: 7px 18px;
 
-      color: #f3c65b;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 3px;
-
-      border: 1px solid rgba(236, 178, 54, 0.65);
       border-radius: 999px;
 
-      background: rgba(5, 5, 5, 0.72);
-      backdrop-filter: blur(10px);
+      background:
+        linear-gradient(
+          180deg,
+          rgba(25, 16, 8, 0.96),
+          rgba(8, 6, 4, 0.96)
+        );
+
+      border: 1px solid rgba(224, 166, 47, 0.60);
+
+      color: #e9b843;
+
+      font-size: 11px;
+      font-weight: 800;
+
+      letter-spacing: 3px;
 
       box-shadow:
-        0 0 20px rgba(217, 144, 27, 0.18);
+        0 5px 18px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
     }
 
-    /* =========================
-       標題
-    ========================= */
+    .brand h1 {
+      margin-top: 15px;
 
-    .intro {
-      text-align: center;
-      padding: 25px 10px 10px;
-    }
-
-    .intro h1 {
       font-size: 29px;
+      line-height: 1.2;
+
       font-weight: 900;
+
       letter-spacing: 3px;
 
       background:
         linear-gradient(
           180deg,
-          #fff0a8 0%,
-          #f8c650 45%,
-          #b86d13 100%
+          #fff1a6 0%,
+          #eebd46 38%,
+          #c98617 100%
         );
 
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       background-clip: text;
+      color: transparent;
 
-      filter:
-        drop-shadow(0 3px 12px rgba(227, 142, 25, 0.25));
+      text-shadow:
+        0 4px 20px rgba(220, 134, 19, 0.12);
     }
 
     .slogan {
       margin-top: 10px;
 
-      color: #e5d4b2;
+      color: #f4dfb3;
+
       font-size: 14px;
+      font-weight: 600;
+
       letter-spacing: 1.5px;
     }
 
-    .divider {
-      width: 52px;
+
+    /* =========================
+       小裝飾
+    ========================= */
+
+    .gold-divider {
+      width: 46px;
       height: 2px;
 
       margin: 20px auto;
+
+      border-radius: 20px;
 
       background:
         linear-gradient(
           90deg,
           transparent,
-          #e6ad38,
+          #d89a27,
+          #ffe19a,
+          #d89a27,
           transparent
         );
+
+      box-shadow:
+        0 0 12px rgba(225, 167, 48, 0.25);
     }
 
-    .welcome {
-      color: #b7aaa2;
+
+    /* =========================
+       說明文字
+    ========================= */
+
+    .intro {
+      text-align: center;
+
+      margin-bottom: 28px;
+
+      color: #bdb5ac;
+
       font-size: 13px;
+
       line-height: 1.8;
+
+      letter-spacing: 0.5px;
     }
+
+    .intro strong {
+      color: #ead7b0;
+      font-weight: 700;
+    }
+
 
     /* =========================
        OFFICIAL LINKS
@@ -195,28 +261,30 @@
       align-items: center;
       gap: 10px;
 
-      margin-top: 20px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
 
-      color: #dba83d;
+      color: #dca934;
 
       font-size: 12px;
-      font-weight: 800;
+      font-weight: 900;
+
       letter-spacing: 2px;
     }
 
     .section-title::before {
       content: "";
+
       width: 28px;
       height: 2px;
 
       background:
         linear-gradient(
           90deg,
-          #f2bd47,
-          #8d5010
+          #e2a82f,
+          rgba(226, 168, 47, 0)
         );
     }
+
 
     /* =========================
        連結按鈕
@@ -234,62 +302,65 @@
       display: flex;
       align-items: center;
 
+      width: 100%;
       min-height: 76px;
-      padding: 13px 18px;
 
-      overflow: hidden;
+      padding: 12px 48px 12px 16px;
 
-      border: 1px solid rgba(202, 148, 48, 0.25);
-      border-radius: 20px;
+      text-decoration: none;
+
+      color: #ffffff;
+
+      border-radius: 21px;
 
       background:
         linear-gradient(
-          135deg,
-          rgba(26, 23, 21, 0.96),
+          145deg,
+          rgba(22, 21, 20, 0.98),
           rgba(9, 9, 9, 0.98)
         );
 
+      border: 1px solid rgba(201, 146, 35, 0.30);
+
       box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.03),
-        0 10px 30px rgba(0, 0, 0, 0.18);
+        0 8px 26px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.035);
 
       transition:
         transform 0.18s ease,
         border-color 0.18s ease,
-        box-shadow 0.18s ease;
+        background 0.18s ease;
     }
 
     .link:active {
-      transform: scale(0.98);
+      transform: scale(0.985);
     }
 
     .link:hover {
-      border-color: rgba(235, 177, 58, 0.55);
-
-      box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.28),
-        0 0 25px rgba(205, 119, 20, 0.08);
+      border-color: rgba(229, 174, 55, 0.62);
     }
 
-    /* 平台網址特殊紅色 */
 
-    .link.main-link {
-      border-color: rgba(255, 177, 51, 0.58);
+    /* 平台網址特別版 */
 
+    .link.platform {
       background:
         linear-gradient(
           135deg,
-          #761b0e 0%,
-          #501006 100%
+          #76170d 0%,
+          #4d0e08 100%
         );
 
+      border: 1px solid rgba(235, 166, 34, 0.70);
+
       box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.05),
-        0 8px 25px rgba(113, 18, 5, 0.22);
+        0 9px 30px rgba(113, 18, 8, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
     }
 
+
     /* =========================
-       ICON
+       Logo 共用設定
     ========================= */
 
     .icon {
@@ -309,58 +380,73 @@
       overflow: hidden;
     }
 
-    .icon img {
+    .icon svg {
       width: 100%;
       height: 100%;
+
       display: block;
-      object-fit: cover;
     }
 
-    /* 紅中 */
 
-    .icon-hz {
-      color: #401300;
+    /* =========================
+       紅中平台 Icon
+    ========================= */
+
+    .hongzhong-icon {
+      color: #5b2500;
+
       font-size: 17px;
       font-weight: 900;
 
       background:
         linear-gradient(
           145deg,
-          #ffd867,
-          #e99a20
+          #ffe073,
+          #d78c17
         );
 
-      border: 1px solid rgba(255, 218, 112, 0.7);
+      border: 1px solid rgba(255, 223, 117, 0.65);
 
       box-shadow:
-        0 4px 15px rgba(241, 158, 27, 0.25);
+        0 5px 18px rgba(228, 155, 28, 0.20);
     }
 
-    /* LINE */
 
-    .icon-line {
-      background: #06c755;
+    /* =========================
+       LINE 官方風格
+    ========================= */
+
+    .line-icon {
+      background: #06C755;
+
+      box-shadow:
+        0 5px 20px rgba(6, 199, 85, 0.20);
     }
 
-    /* IG */
 
-    .icon-ig {
-      background:
-        radial-gradient(
-          circle at 30% 110%,
-          #ffd600 0%,
-          #ff7a00 30%,
-          #ff0169 55%,
-          #d300c5 78%,
-          #7638fa 100%
-        );
+    /* =========================
+       Instagram
+    ========================= */
+
+    .instagram-icon {
+      background: transparent;
+
+      box-shadow:
+        0 5px 20px rgba(255, 0, 105, 0.16);
     }
 
-    /* Threads */
 
-    .icon-threads {
+    /* =========================
+       Threads
+    ========================= */
+
+    .threads-icon {
       background: #ffffff;
+
+      box-shadow:
+        0 5px 20px rgba(255, 255, 255, 0.09);
     }
+
 
     /* =========================
        文字
@@ -368,85 +454,95 @@
 
     .link-text {
       min-width: 0;
-      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 4px;
     }
 
     .link-title {
-      display: block;
-
       color: #ffffff;
 
       font-size: 16px;
-      font-weight: 800;
+      font-weight: 850;
+
       letter-spacing: 0.2px;
     }
 
     .link-subtitle {
-      display: block;
-
-      margin-top: 4px;
-
-      color: #938985;
+      color: #918b84;
 
       font-size: 11px;
-      line-height: 1.35;
+
+      line-height: 1.4;
+
+      letter-spacing: 0.15px;
     }
+
+    .platform .link-subtitle {
+      color: #dfb89e;
+    }
+
 
     /* 推廣碼 */
 
     .promo-code {
-      color: #e8bd5d;
-      font-weight: 650;
+      display: inline-block;
+
+      margin-top: 2px;
+
+      color: #ffd56c;
+
+      font-size: 11px;
+      font-weight: 800;
+
+      letter-spacing: 0.4px;
     }
 
-    .promo-code strong {
-      color: #ffd45c;
-
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: 1px;
-
-      text-shadow:
-        0 0 10px rgba(255, 200, 66, 0.38);
-    }
 
     /* 箭頭 */
 
     .arrow {
-      margin-left: 10px;
+      position: absolute;
 
-      color: #dca72e;
+      right: 18px;
+      top: 50%;
+
+      transform: translateY(-50%);
+
+      color: #e6ae30;
 
       font-size: 22px;
       font-weight: 400;
-
-      transition: transform 0.18s ease;
     }
 
-    .link:hover .arrow {
-      transform: translateX(3px);
-    }
 
     /* =========================
        Footer
     ========================= */
 
     footer {
-      padding: 34px 10px 20px;
-
       text-align: center;
 
-      color: #625853;
+      margin-top: 34px;
+
+      padding-bottom: 8px;
+
+      color: #6f6962;
 
       font-size: 10px;
+
       line-height: 1.8;
+
+      letter-spacing: 0.5px;
     }
 
     footer strong {
-      color: #c99735;
+      color: #c7952e;
       font-weight: 700;
-      letter-spacing: 1px;
     }
+
 
     /* =========================
        固定立即註冊
@@ -455,120 +551,111 @@
     .fixed-register {
       position: fixed;
 
-      z-index: 1000;
-
       left: 50%;
-      bottom: 18px;
+      bottom: calc(14px + env(safe-area-inset-bottom));
 
       transform: translateX(-50%);
 
-      width: calc(100% - 32px);
-      max-width: 488px;
-    }
+      z-index: 999;
 
-    .register-btn {
-      position: relative;
+      width: calc(100% - 28px);
+      max-width: 492px;
+
+      height: 58px;
 
       display: flex;
       align-items: center;
       justify-content: center;
 
-      width: 100%;
-      min-height: 58px;
-
-      color: #2c1300;
-
-      font-size: 16px;
-      font-weight: 900;
-      letter-spacing: 2px;
-
-      border: 1px solid #ffda72;
       border-radius: 18px;
 
+      text-decoration: none;
+
+      color: #351500;
+
+      font-size: 17px;
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
       background:
         linear-gradient(
-          180deg,
-          #ffd96a 0%,
-          #e79b23 100%
+          135deg,
+          #ffe27c 0%,
+          #d9941d 46%,
+          #ffcc55 100%
         );
+
+      border: 1px solid rgba(255, 235, 169, 0.70);
 
       box-shadow:
-        0 10px 35px rgba(227, 143, 24, 0.28),
-        0 0 25px rgba(255, 184, 45, 0.14),
-        inset 0 1px 0 rgba(255, 255, 255, 0.55);
+        0 12px 35px rgba(0, 0, 0, 0.55),
+        0 4px 22px rgba(221, 147, 27, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.50);
 
-      transition: transform 0.15s ease;
+      transition:
+        transform 0.18s ease,
+        filter 0.18s ease;
     }
 
-    .register-btn:active {
-      transform: scale(0.98);
+    .fixed-register:active {
+      transform:
+        translateX(-50%)
+        scale(0.98);
     }
 
-    .register-btn::before {
-      content: "";
-
-      position: absolute;
-      top: 0;
-      left: 12%;
-
-      width: 40%;
-      height: 1px;
-
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.9),
-          transparent
-        );
+    .fixed-register:hover {
+      filter: brightness(1.05);
     }
+
 
     /* =========================
        手機
     ========================= */
 
-    @media (max-width: 480px) {
+    @media (max-width: 420px) {
 
       .page {
         padding-left: 12px;
         padding-right: 12px;
       }
 
-      .intro h1 {
+      .hero {
+        height: 235px;
+      }
+
+      .brand h1 {
         font-size: 27px;
       }
 
       .link {
         min-height: 74px;
-        padding: 12px 15px;
       }
 
       .icon {
         width: 46px;
         height: 46px;
+
         flex-basis: 46px;
       }
 
       .link-title {
         font-size: 15px;
       }
-
-      .fixed-register {
-        width: calc(100% - 24px);
-        bottom: 12px;
-      }
     }
 
   </style>
 </head>
 
+
 <body>
 
   <main class="page">
 
-    <!-- ======================
-         主圖
-    ======================= -->
+
+    <!-- =========================
+         上方照片
+    ========================== -->
 
     <section class="hero">
 
@@ -577,38 +664,51 @@
         alt="紅中娛樂城"
       >
 
-      <div class="hero-badge">
-        HONG ZHONG
-      </div>
-
     </section>
 
 
-    <!-- ======================
-         品牌
-    ======================= -->
+    <!-- =========================
+         品牌名稱
+    ========================== -->
 
-    <section class="intro">
+    <section class="brand">
 
-      <h1>紅中娛樂城</h1>
+      <div class="brand-tag">
+        HONG ZHONG
+      </div>
+
+      <h1>
+        紅中娛樂城
+      </h1>
 
       <div class="slogan">
         黑網遇多了・紅中最保障
       </div>
 
-      <div class="divider"></div>
-
-      <div class="welcome">
-        歡迎來到紅中娛樂城<br>
-        點選下方連結，快速找到我們
-      </div>
-
     </section>
 
 
-    <!-- ======================
+    <div class="gold-divider"></div>
+
+
+    <!-- =========================
+         簡介
+    ========================== -->
+
+    <div class="intro">
+
+      歡迎來到
+      <strong>紅中娛樂城</strong>
+      <br>
+
+      點選下方連結，快速找到我們
+
+    </div>
+
+
+    <!-- =========================
          官方連結
-    ======================= -->
+    ========================== -->
 
     <section>
 
@@ -616,41 +716,54 @@
         OFFICIAL LINKS
       </div>
 
+
       <div class="links">
 
 
-        <!-- 平台網址 -->
+        <!-- =====================
+             平台網址
+        ====================== -->
 
         <a
-          class="link main-link"
+          class="link platform"
           href="http://gm.fl8899.com/hz"
           target="_blank"
           rel="noopener noreferrer"
         >
 
-          <div class="icon icon-hz">
+          <div class="icon hongzhong-icon">
             中
           </div>
+
 
           <div class="link-text">
 
             <span class="link-title">
-              紅中娛樂城
+              平台網址
             </span>
 
-            <span class="link-subtitle promo-code">
-              推廣碼務必輸入
-              <strong>55014</strong>
+            <span class="link-subtitle">
+              進入紅中娛樂城
+            </span>
+
+            <span class="promo-code">
+              推廣碼務必輸入 55014
             </span>
 
           </div>
 
-          <span class="arrow">›</span>
+
+          <span class="arrow">
+            ›
+          </span>
 
         </a>
 
 
-        <!-- LINE -->
+
+        <!-- =====================
+             LINE
+        ====================== -->
 
         <a
           class="link"
@@ -659,40 +772,48 @@
           rel="noopener noreferrer"
         >
 
-          <div class="icon icon-line">
+          <div class="icon line-icon">
 
             <svg
-              width="32"
-              height="32"
-              viewBox="0 0 48 48"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
+
               <path
                 fill="#ffffff"
-                d="M24 9C15.7 9 9 14.4 9 21.1c0 6 5.3 11 12.5 12 .5.1 1.2.4 1.4.9.2.4.1 1.1.1 1.5l-.2 1.4c-.1.4-.3 1.7 1.5.9 1.8-.8 9.8-5.8 13.4-9.9 2.5-2.7 3.3-5.5 3.3-6.8C41 14.4 34.3 9 24 9Z"
+                d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63h-1.758v1.125h1.758a.631.631 0 1 1 0 1.261h-2.386a.631.631 0 0 1-.631-.63V8.108c0-.345.282-.63.631-.63h2.386a.631.631 0 1 1 0 1.261h-1.758v1.124h1.758zm-3.855 3.016a.63.63 0 0 1-.431.598.638.638 0 0 1-.703-.193l-2.443-3.317v2.912a.631.631 0 1 1-1.262 0V8.108a.63.63 0 0 1 .432-.598.637.637 0 0 1 .702.194l2.443 3.316V8.108a.631.631 0 1 1 1.262 0v4.771zm-5.654 0a.631.631 0 1 1-1.261 0V8.108a.631.631 0 1 1 1.261 0v4.771zm-2.084.631H5.386a.631.631 0 0 1-.631-.631V8.108a.631.631 0 1 1 1.262 0v4.141h1.755a.631.631 0 1 1 0 1.261zM12 2C6.477 2 2 5.686 2 10.233c0 4.076 3.608 7.491 8.479 8.137.33.071.78.218.894.5.103.256.067.658.033.917l-.144.868c-.044.256-.204 1.002.877.546 1.082-.456 5.838-3.438 7.964-5.887C21.57 13.706 22 12.072 22 10.233 22 5.686 17.523 2 12 2z"
               />
+
             </svg>
 
           </div>
 
+
           <div class="link-text">
 
             <span class="link-title">
-              官方 LINE
+              LINE 註冊
             </span>
 
             <span class="link-subtitle">
-              LINE註冊・快速聯絡
+              加入好友・快速聯絡
             </span>
 
           </div>
 
-          <span class="arrow">›</span>
+
+          <span class="arrow">
+            ›
+          </span>
 
         </a>
 
 
-        <!-- Instagram -->
+
+        <!-- =====================
+             Instagram
+        ====================== -->
 
         <a
           class="link"
@@ -701,45 +822,94 @@
           rel="noopener noreferrer"
         >
 
-          <div class="icon icon-ig">
+          <div class="icon instagram-icon">
 
             <svg
-              width="30"
-              height="30"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
 
+              <defs>
+
+                <radialGradient
+                  id="igGradient"
+                  cx="30%"
+                  cy="107%"
+                  r="150%"
+                >
+
+                  <stop
+                    offset="0%"
+                    stop-color="#ffd600"
+                  />
+
+                  <stop
+                    offset="25%"
+                    stop-color="#ff7a00"
+                  />
+
+                  <stop
+                    offset="50%"
+                    stop-color="#ff0169"
+                  />
+
+                  <stop
+                    offset="75%"
+                    stop-color="#d300c5"
+                  />
+
+                  <stop
+                    offset="100%"
+                    stop-color="#7638fa"
+                  />
+
+                </radialGradient>
+
+              </defs>
+
+
               <rect
-                x="3"
-                y="3"
-                width="18"
-                height="18"
-                rx="5"
+                width="24"
+                height="24"
+                rx="6"
+                fill="url(#igGradient)"
+              />
+
+
+              <rect
+                x="5"
+                y="5"
+                width="14"
+                height="14"
+                rx="4"
                 fill="none"
                 stroke="#ffffff"
-                stroke-width="2"
+                stroke-width="1.8"
               />
+
 
               <circle
                 cx="12"
                 cy="12"
-                r="4"
+                r="3.4"
                 fill="none"
                 stroke="#ffffff"
-                stroke-width="2"
+                stroke-width="1.8"
               />
 
+
               <circle
-                cx="17.4"
-                cy="6.7"
-                r="1.2"
+                cx="17"
+                cy="7"
+                r="1.05"
                 fill="#ffffff"
               />
 
             </svg>
 
           </div>
+
 
           <div class="link-text">
 
@@ -753,12 +923,18 @@
 
           </div>
 
-          <span class="arrow">›</span>
+
+          <span class="arrow">
+            ›
+          </span>
 
         </a>
 
 
-        <!-- Threads -->
+
+        <!-- =====================
+             Threads
+        ====================== -->
 
         <a
           class="link"
@@ -767,23 +943,31 @@
           rel="noopener noreferrer"
         >
 
-          <div class="icon icon-threads">
+          <div class="icon threads-icon">
 
             <svg
-              width="31"
-              height="31"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
+
+              <rect
+                width="24"
+                height="24"
+                rx="6"
+                fill="#ffffff"
+              />
+
 
               <path
                 fill="#000000"
-                d="M12.2 2C6.5 2 3 5.8 3 11.9c0 6.2 3.6 10.1 9.4 10.1 5.1 0 8.6-2.9 8.6-7.1 0-3.3-1.9-5.4-5.3-6.2-.5-2.5-2.1-3.9-4.7-3.9-2.1 0-3.8 1-4.8 2.7l1.8 1.2c.7-1.2 1.7-1.8 3-1.8 1.4 0 2.3.6 2.7 1.7-.5 0-1 0-1.5.1-3.5.4-5.5 2.1-5.5 4.7 0 2.5 2 4.3 4.8 4.3 2.9 0 4.8-1.7 4.8-4.2 0-.8-.1-1.5-.2-2.1 1.8.7 2.7 1.9 2.7 3.6 0 2.9-2.4 4.8-6.3 4.8-4.6 0-7.2-2.9-7.2-7.9 0-4.9 2.5-7.7 7-7.7 3.7 0 6.1 1.9 6.9 5.5l2.2-.5C20.4 4.6 17.2 2 12.2 2Zm-.8 13.5c-1.5 0-2.5-.8-2.5-2 0-1.3 1.1-2.2 3.5-2.5.6-.1 1.2-.1 1.7 0 .1.6.2 1.2.2 1.8 0 1.7-1.1 2.7-2.9 2.7Z"
+                d="M12.2 3.2c-4.8 0-7.7 3.1-7.7 8.3 0 5.3 3 8.6 7.9 8.6 4.4 0 7.3-2.5 7.3-6.1 0-2.8-1.6-4.6-4.5-5.3-.4-2.1-1.8-3.3-4-3.3-1.8 0-3.2.8-4.1 2.3l1.5 1c.6-1 1.5-1.5 2.6-1.5 1.2 0 2 .5 2.3 1.5-.4 0-.8 0-1.3.1-3 .3-4.7 1.8-4.7 4 0 2.1 1.7 3.7 4.1 3.7 2.5 0 4.1-1.5 4.1-3.6 0-.7-.1-1.3-.2-1.8 1.5.6 2.3 1.6 2.3 3.1 0 2.5-2 4.1-5.4 4.1-3.9 0-6.1-2.5-6.1-6.7 0-4.2 2.1-6.6 5.9-6.6 3.1 0 5.2 1.6 5.9 4.7l1.9-.4c-.9-4.1-3.6-6.1-7.8-6.1zm-.7 11.5c-1.3 0-2.1-.7-2.1-1.7 0-1.1.9-1.9 3-2.1.5-.1 1-.1 1.4 0 .1.5.2 1 .2 1.5 0 1.4-1 2.3-2.5 2.3z"
               />
 
             </svg>
 
           </div>
+
 
           <div class="link-text">
 
@@ -797,18 +981,23 @@
 
           </div>
 
-          <span class="arrow">›</span>
+
+          <span class="arrow">
+            ›
+          </span>
 
         </a>
+
 
       </div>
 
     </section>
 
 
-    <!-- ======================
+
+    <!-- =========================
          Footer
-    ======================= -->
+    ========================== -->
 
     <footer>
 
@@ -822,25 +1011,24 @@
 
     </footer>
 
+
   </main>
 
 
-  <!-- ======================
-       固定立即註冊
-  ======================= -->
 
-  <div class="fixed-register">
+  <!-- =========================
+       固定 LINE 註冊按鈕
+  ========================== -->
 
-    <a
-      class="register-btn"
-      href="https://lin.ee/U1eXXfK"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      立即註冊
-    </a>
+  <a
+    class="fixed-register"
+    href="https://lin.ee/U1eXXfK"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    立即註冊
+  </a>
 
-  </div>
 
 </body>
 </html>
