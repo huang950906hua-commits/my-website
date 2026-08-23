@@ -25,6 +25,7 @@
 
     body {
       min-height: 100vh;
+
       font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -52,6 +53,11 @@
       padding-bottom: 110px;
     }
 
+    a {
+      text-decoration: none;
+      color: inherit;
+      -webkit-tap-highlight-color: transparent;
+    }
 
     /* =========================
        整體容器
@@ -64,13 +70,13 @@
       padding: 0 14px 40px;
     }
 
-
     /* =========================
        上方主視覺
     ========================= */
 
     .hero {
       position: relative;
+
       width: 100%;
       height: 255px;
 
@@ -78,9 +84,14 @@
 
       border-radius: 0 0 24px 24px;
 
-      border-left: 1px solid rgba(231, 171, 45, 0.22);
-      border-right: 1px solid rgba(231, 171, 45, 0.22);
-      border-bottom: 1px solid rgba(231, 171, 45, 0.28);
+      border-left:
+        1px solid rgba(231, 171, 45, 0.22);
+
+      border-right:
+        1px solid rgba(231, 171, 45, 0.22);
+
+      border-bottom:
+        1px solid rgba(231, 171, 45, 0.28);
 
       box-shadow:
         0 18px 50px rgba(0, 0, 0, 0.45),
@@ -94,8 +105,6 @@
       height: 100%;
 
       object-fit: cover;
-
-      /* 讓吉祥物重點比較容易留在畫面 */
       object-position: center 45%;
 
       display: block;
@@ -118,13 +127,13 @@
       pointer-events: none;
     }
 
-
     /* =========================
        品牌區
     ========================= */
 
     .brand {
       text-align: center;
+
       margin-top: -16px;
 
       position: relative;
@@ -149,7 +158,8 @@
           rgba(8, 6, 4, 0.96)
         );
 
-      border: 1px solid rgba(224, 166, 47, 0.60);
+      border:
+        1px solid rgba(224, 166, 47, 0.60);
 
       color: #e9b843;
 
@@ -183,6 +193,7 @@
 
       -webkit-background-clip: text;
       background-clip: text;
+
       color: transparent;
 
       text-shadow:
@@ -199,7 +210,6 @@
 
       letter-spacing: 1.5px;
     }
-
 
     /* =========================
        小裝飾
@@ -227,9 +237,8 @@
         0 0 12px rgba(225, 167, 48, 0.25);
     }
 
-
     /* =========================
-       說明文字
+       說明
     ========================= */
 
     .intro {
@@ -240,7 +249,6 @@
       color: #bdb5ac;
 
       font-size: 13px;
-
       line-height: 1.8;
 
       letter-spacing: 0.5px;
@@ -251,7 +259,6 @@
       font-weight: 700;
     }
 
-
     /* =========================
        OFFICIAL LINKS
     ========================= */
@@ -259,6 +266,7 @@
     .section-title {
       display: flex;
       align-items: center;
+
       gap: 10px;
 
       margin-bottom: 12px;
@@ -285,14 +293,14 @@
         );
     }
 
-
     /* =========================
-       連結按鈕
+       按鈕
     ========================= */
 
     .links {
       display: flex;
       flex-direction: column;
+
       gap: 12px;
     }
 
@@ -307,8 +315,6 @@
 
       padding: 12px 48px 12px 16px;
 
-      text-decoration: none;
-
       color: #ffffff;
 
       border-radius: 21px;
@@ -320,7 +326,8 @@
           rgba(9, 9, 9, 0.98)
         );
 
-      border: 1px solid rgba(201, 146, 35, 0.30);
+      border:
+        1px solid rgba(201, 146, 35, 0.30);
 
       box-shadow:
         0 8px 26px rgba(0, 0, 0, 0.25),
@@ -328,8 +335,7 @@
 
       transition:
         transform 0.18s ease,
-        border-color 0.18s ease,
-        background 0.18s ease;
+        border-color 0.18s ease;
     }
 
     .link:active {
@@ -337,11 +343,9 @@
     }
 
     .link:hover {
-      border-color: rgba(229, 174, 55, 0.62);
+      border-color:
+        rgba(229, 174, 55, 0.62);
     }
-
-
-    /* 平台網址特別版 */
 
     .link.platform {
       background:
@@ -351,102 +355,44 @@
           #4d0e08 100%
         );
 
-      border: 1px solid rgba(235, 166, 34, 0.70);
+      border:
+        1px solid rgba(235, 166, 34, 0.70);
 
       box-shadow:
         0 9px 30px rgba(113, 18, 8, 0.25),
         inset 0 1px 0 rgba(255, 255, 255, 0.08);
     }
 
-
     /* =========================
-       Logo 共用設定
+       圖標
     ========================= */
 
     .icon {
-      width: 48px;
-      height: 48px;
+      width: 50px;
+      height: 50px;
 
-      flex: 0 0 48px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      flex: 0 0 50px;
 
       margin-right: 14px;
 
       border-radius: 14px;
 
       overflow: hidden;
+
+      background: #111;
+
+      box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.28);
     }
 
-    .icon svg {
+    .icon img {
+      display: block;
+
       width: 100%;
       height: 100%;
 
-      display: block;
+      object-fit: cover;
     }
-
-
-    /* =========================
-       紅中平台 Icon
-    ========================= */
-
-    .hongzhong-icon {
-      color: #5b2500;
-
-      font-size: 17px;
-      font-weight: 900;
-
-      background:
-        linear-gradient(
-          145deg,
-          #ffe073,
-          #d78c17
-        );
-
-      border: 1px solid rgba(255, 223, 117, 0.65);
-
-      box-shadow:
-        0 5px 18px rgba(228, 155, 28, 0.20);
-    }
-
-
-    /* =========================
-       LINE 官方風格
-    ========================= */
-
-    .line-icon {
-      background: #06C755;
-
-      box-shadow:
-        0 5px 20px rgba(6, 199, 85, 0.20);
-    }
-
-
-    /* =========================
-       Instagram
-    ========================= */
-
-    .instagram-icon {
-      background: transparent;
-
-      box-shadow:
-        0 5px 20px rgba(255, 0, 105, 0.16);
-    }
-
-
-    /* =========================
-       Threads
-    ========================= */
-
-    .threads-icon {
-      background: #ffffff;
-
-      box-shadow:
-        0 5px 20px rgba(255, 255, 255, 0.09);
-    }
-
 
     /* =========================
        文字
@@ -484,9 +430,6 @@
       color: #dfb89e;
     }
 
-
-    /* 推廣碼 */
-
     .promo-code {
       display: inline-block;
 
@@ -500,9 +443,6 @@
       letter-spacing: 0.4px;
     }
 
-
-    /* 箭頭 */
-
     .arrow {
       position: absolute;
 
@@ -514,9 +454,7 @@
       color: #e6ae30;
 
       font-size: 22px;
-      font-weight: 400;
     }
-
 
     /* =========================
        Footer
@@ -532,7 +470,6 @@
       color: #6f6962;
 
       font-size: 10px;
-
       line-height: 1.8;
 
       letter-spacing: 0.5px;
@@ -543,7 +480,6 @@
       font-weight: 700;
     }
 
-
     /* =========================
        固定立即註冊
     ========================= */
@@ -552,7 +488,8 @@
       position: fixed;
 
       left: 50%;
-      bottom: calc(14px + env(safe-area-inset-bottom));
+      bottom:
+        calc(14px + env(safe-area-inset-bottom));
 
       transform: translateX(-50%);
 
@@ -569,8 +506,6 @@
 
       border-radius: 18px;
 
-      text-decoration: none;
-
       color: #351500;
 
       font-size: 17px;
@@ -586,7 +521,8 @@
           #ffcc55 100%
         );
 
-      border: 1px solid rgba(255, 235, 169, 0.70);
+      border:
+        1px solid rgba(255, 235, 169, 0.70);
 
       box-shadow:
         0 12px 35px rgba(0, 0, 0, 0.55),
@@ -603,11 +539,6 @@
         translateX(-50%)
         scale(0.98);
     }
-
-    .fixed-register:hover {
-      filter: brightness(1.05);
-    }
-
 
     /* =========================
        手機
@@ -633,10 +564,10 @@
       }
 
       .icon {
-        width: 46px;
-        height: 46px;
+        width: 48px;
+        height: 48px;
 
-        flex-basis: 46px;
+        flex-basis: 48px;
       }
 
       .link-title {
@@ -647,16 +578,11 @@
   </style>
 </head>
 
-
 <body>
 
   <main class="page">
 
-
-    <!-- =========================
-         上方照片
-    ========================== -->
-
+    <!-- 上方主圖 -->
     <section class="hero">
 
       <img
@@ -667,10 +593,7 @@
     </section>
 
 
-    <!-- =========================
-         品牌名稱
-    ========================== -->
-
+    <!-- 品牌 -->
     <section class="brand">
 
       <div class="brand-tag">
@@ -691,14 +614,11 @@
     <div class="gold-divider"></div>
 
 
-    <!-- =========================
-         簡介
-    ========================== -->
-
     <div class="intro">
 
       歡迎來到
       <strong>紅中娛樂城</strong>
+
       <br>
 
       點選下方連結，快速找到我們
@@ -706,10 +626,7 @@
     </div>
 
 
-    <!-- =========================
-         官方連結
-    ========================== -->
-
+    <!-- 官方連結 -->
     <section>
 
       <div class="section-title">
@@ -719,11 +636,7 @@
 
       <div class="links">
 
-
-        <!-- =====================
-             平台網址
-        ====================== -->
-
+        <!-- 平台網址 -->
         <a
           class="link platform"
           href="http://gm.fl8899.com/hz"
@@ -731,8 +644,13 @@
           rel="noopener noreferrer"
         >
 
-          <div class="icon hongzhong-icon">
-            中
+          <div class="icon">
+
+            <img
+              src="hongzhong-icon.png"
+              alt="紅中娛樂城"
+            >
+
           </div>
 
 
@@ -752,7 +670,6 @@
 
           </div>
 
-
           <span class="arrow">
             ›
           </span>
@@ -760,11 +677,7 @@
         </a>
 
 
-
-        <!-- =====================
-             LINE
-        ====================== -->
-
+        <!-- LINE -->
         <a
           class="link"
           href="https://lin.ee/U1eXXfK"
@@ -772,20 +685,12 @@
           rel="noopener noreferrer"
         >
 
-          <div class="icon line-icon">
+          <div class="icon">
 
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
+            <img
+              src="line-icon.png"
+              alt="LINE"
             >
-
-              <path
-                fill="#ffffff"
-                d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63h-1.758v1.125h1.758a.631.631 0 1 1 0 1.261h-2.386a.631.631 0 0 1-.631-.63V8.108c0-.345.282-.63.631-.63h2.386a.631.631 0 1 1 0 1.261h-1.758v1.124h1.758zm-3.855 3.016a.63.63 0 0 1-.431.598.638.638 0 0 1-.703-.193l-2.443-3.317v2.912a.631.631 0 1 1-1.262 0V8.108a.63.63 0 0 1 .432-.598.637.637 0 0 1 .702.194l2.443 3.316V8.108a.631.631 0 1 1 1.262 0v4.771zm-5.654 0a.631.631 0 1 1-1.261 0V8.108a.631.631 0 1 1 1.261 0v4.771zm-2.084.631H5.386a.631.631 0 0 1-.631-.631V8.108a.631.631 0 1 1 1.262 0v4.141h1.755a.631.631 0 1 1 0 1.261zM12 2C6.477 2 2 5.686 2 10.233c0 4.076 3.608 7.491 8.479 8.137.33.071.78.218.894.5.103.256.067.658.033.917l-.144.868c-.044.256-.204 1.002.877.546 1.082-.456 5.838-3.438 7.964-5.887C21.57 13.706 22 12.072 22 10.233 22 5.686 17.523 2 12 2z"
-              />
-
-            </svg>
 
           </div>
 
@@ -802,7 +707,6 @@
 
           </div>
 
-
           <span class="arrow">
             ›
           </span>
@@ -810,11 +714,7 @@
         </a>
 
 
-
-        <!-- =====================
-             Instagram
-        ====================== -->
-
+        <!-- Instagram -->
         <a
           class="link"
           href="https://www.instagram.com/trun_888/"
@@ -822,91 +722,12 @@
           rel="noopener noreferrer"
         >
 
-          <div class="icon instagram-icon">
+          <div class="icon">
 
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
+            <img
+              src="instagram-icon.png"
+              alt="Instagram"
             >
-
-              <defs>
-
-                <radialGradient
-                  id="igGradient"
-                  cx="30%"
-                  cy="107%"
-                  r="150%"
-                >
-
-                  <stop
-                    offset="0%"
-                    stop-color="#ffd600"
-                  />
-
-                  <stop
-                    offset="25%"
-                    stop-color="#ff7a00"
-                  />
-
-                  <stop
-                    offset="50%"
-                    stop-color="#ff0169"
-                  />
-
-                  <stop
-                    offset="75%"
-                    stop-color="#d300c5"
-                  />
-
-                  <stop
-                    offset="100%"
-                    stop-color="#7638fa"
-                  />
-
-                </radialGradient>
-
-              </defs>
-
-
-              <rect
-                width="24"
-                height="24"
-                rx="6"
-                fill="url(#igGradient)"
-              />
-
-
-              <rect
-                x="5"
-                y="5"
-                width="14"
-                height="14"
-                rx="4"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="1.8"
-              />
-
-
-              <circle
-                cx="12"
-                cy="12"
-                r="3.4"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="1.8"
-              />
-
-
-              <circle
-                cx="17"
-                cy="7"
-                r="1.05"
-                fill="#ffffff"
-              />
-
-            </svg>
 
           </div>
 
@@ -923,7 +744,6 @@
 
           </div>
 
-
           <span class="arrow">
             ›
           </span>
@@ -931,11 +751,7 @@
         </a>
 
 
-
-        <!-- =====================
-             Threads
-        ====================== -->
-
+        <!-- Threads -->
         <a
           class="link"
           href="https://www.threads.com/@trun_888?igshid=NTc4MTIwNjQ2YQ=="
@@ -943,28 +759,12 @@
           rel="noopener noreferrer"
         >
 
-          <div class="icon threads-icon">
+          <div class="icon">
 
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
+            <img
+              src="threads-icon.png"
+              alt="Threads"
             >
-
-              <rect
-                width="24"
-                height="24"
-                rx="6"
-                fill="#ffffff"
-              />
-
-
-              <path
-                fill="#000000"
-                d="M12.2 3.2c-4.8 0-7.7 3.1-7.7 8.3 0 5.3 3 8.6 7.9 8.6 4.4 0 7.3-2.5 7.3-6.1 0-2.8-1.6-4.6-4.5-5.3-.4-2.1-1.8-3.3-4-3.3-1.8 0-3.2.8-4.1 2.3l1.5 1c.6-1 1.5-1.5 2.6-1.5 1.2 0 2 .5 2.3 1.5-.4 0-.8 0-1.3.1-3 .3-4.7 1.8-4.7 4 0 2.1 1.7 3.7 4.1 3.7 2.5 0 4.1-1.5 4.1-3.6 0-.7-.1-1.3-.2-1.8 1.5.6 2.3 1.6 2.3 3.1 0 2.5-2 4.1-5.4 4.1-3.9 0-6.1-2.5-6.1-6.7 0-4.2 2.1-6.6 5.9-6.6 3.1 0 5.2 1.6 5.9 4.7l1.9-.4c-.9-4.1-3.6-6.1-7.8-6.1zm-.7 11.5c-1.3 0-2.1-.7-2.1-1.7 0-1.1.9-1.9 3-2.1.5-.1 1-.1 1.4 0 .1.5.2 1 .2 1.5 0 1.4-1 2.3-2.5 2.3z"
-              />
-
-            </svg>
 
           </div>
 
@@ -981,23 +781,16 @@
 
           </div>
 
-
           <span class="arrow">
             ›
           </span>
 
         </a>
 
-
       </div>
 
     </section>
 
-
-
-    <!-- =========================
-         Footer
-    ========================== -->
 
     <footer>
 
@@ -1011,15 +804,10 @@
 
     </footer>
 
-
   </main>
 
 
-
-  <!-- =========================
-       固定 LINE 註冊按鈕
-  ========================== -->
-
+  <!-- 固定立即註冊 -->
   <a
     class="fixed-register"
     href="https://lin.ee/U1eXXfK"
@@ -1028,7 +816,6 @@
   >
     立即註冊
   </a>
-
 
 </body>
 </html>
