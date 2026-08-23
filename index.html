@@ -2,28 +2,18 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-  >
+  <title>紅中娛樂城｜官方連結</title>
 
+  <meta name="description" content="紅中娛樂城官方連結">
   <meta name="theme-color" content="#080403">
 
-  <title>紅中娛樂城｜官方入口</title>
-
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-  >
-
   <style>
-
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
     html {
@@ -31,660 +21,355 @@
     }
 
     body {
+      min-height: 100vh;
       font-family:
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
+        "Noto Sans TC",
         "Microsoft JhengHei",
-        Arial,
         sans-serif;
 
       color: #ffffff;
 
-      min-height: 100vh;
-
-      overflow-x: hidden;
-
       background:
         radial-gradient(
-          circle at 50% -8%,
-          rgba(165, 34, 16, .46),
-          transparent 34%
-        ),
-        radial-gradient(
-          circle at 20% 35%,
-          rgba(115, 18, 10, .17),
-          transparent 28%
+          circle at 50% 0%,
+          rgba(115, 18, 8, 0.28),
+          transparent 38%
         ),
         linear-gradient(
           180deg,
-          #130605 0%,
-          #080505 48%,
-          #030303 100%
+          #100403 0%,
+          #080403 38%,
+          #050505 100%
         );
+
+      padding-bottom: 110px;
     }
 
-
-    body::before {
-      content: "";
-
-      position: fixed;
-
-      inset: 0;
-
-      pointer-events: none;
-
-      z-index: 0;
-
-      background:
-        radial-gradient(
-          circle at 18% 18%,
-          rgba(255, 180, 50, .05),
-          transparent 24%
-        ),
-        radial-gradient(
-          circle at 82% 32%,
-          rgba(255, 70, 25, .045),
-          transparent 26%
-        );
+    a {
+      text-decoration: none;
+      color: inherit;
+      -webkit-tap-highlight-color: transparent;
     }
-
 
     /* =========================
-       整體
+       主容器
     ========================= */
 
-    .site {
-      position: relative;
-
-      z-index: 1;
-
+    .page {
       width: 100%;
-
       max-width: 520px;
-
-      min-height: 100vh;
-
       margin: 0 auto;
-
-      background:
-        rgba(0, 0, 0, .06);
-
-      box-shadow:
-        0 0 70px rgba(0, 0, 0, .38);
+      padding: 0 16px 40px;
     }
 
-
     /* =========================
-       HERO
+       頂部圖片
     ========================= */
 
     .hero {
       position: relative;
-
-      height: 610px;
-
+      width: 100%;
       overflow: hidden;
-
-      border-bottom-left-radius: 34px;
-      border-bottom-right-radius: 34px;
+      border-radius: 0 0 28px 28px;
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.55),
+        0 0 45px rgba(173, 67, 10, 0.13);
     }
-
 
     .hero img {
       display: block;
-
       width: 100%;
-      height: 100%;
-
-      object-fit: cover;
-
-      object-position: center 42%;
-
-      animation:
-        heroZoom 10s ease-in-out infinite alternate;
+      height: auto;
     }
-
-
-    @keyframes heroZoom {
-
-      from {
-        transform: scale(1.025);
-      }
-
-      to {
-        transform: scale(1.075);
-      }
-
-    }
-
 
     .hero::after {
       content: "";
-
       position: absolute;
-
-      inset: 0;
-
-      background:
-        linear-gradient(
-          180deg,
-          rgba(0, 0, 0, .02) 0%,
-          rgba(0, 0, 0, .06) 42%,
-          rgba(9, 4, 3, .55) 72%,
-          #090504 100%
-        );
-    }
-
-
-    .hero-glow {
-      position: absolute;
-
-      z-index: 1;
-
-      width: 230px;
-      height: 230px;
-
-      top: 95px;
-      right: -45px;
-
-      border-radius: 50%;
-
-      background:
-        rgba(255, 150, 30, .14);
-
-      filter: blur(55px);
-
-      animation:
-        glowFloat 5s ease-in-out infinite;
-    }
-
-
-    @keyframes glowFloat {
-
-      0%,
-      100% {
-        transform: translateY(0);
-        opacity: .55;
-      }
-
-      50% {
-        transform: translateY(20px);
-        opacity: .9;
-      }
-
-    }
-
-
-    .hero-content {
-      position: absolute;
-
-      z-index: 2;
-
       left: 0;
       right: 0;
-      bottom: 34px;
-
-      padding: 0 22px;
-
-      text-align: center;
-    }
-
-
-    .brand-chip {
-      display: inline-flex;
-
-      align-items: center;
-
-      gap: 8px;
-
-      padding: 8px 16px;
-
-      margin-bottom: 14px;
-
-      border-radius: 999px;
-
-      border:
-        1px solid rgba(255, 205, 92, .35);
-
-      background:
-        rgba(12, 7, 5, .60);
-
-      backdrop-filter: blur(12px);
-
-      -webkit-backdrop-filter: blur(12px);
-
-      color: #ffd878;
-
-      font-size: 12px;
-
-      letter-spacing: 3px;
-
-      box-shadow:
-        inset 0 1px rgba(255, 255, 255, .06),
-        0 8px 25px rgba(0, 0, 0, .2);
-    }
-
-
-    .brand-chip::before {
-      content: "中";
-
-      display: grid;
-
-      place-items: center;
-
-      width: 23px;
-      height: 23px;
-
-      border-radius: 7px;
+      bottom: 0;
+      height: 45%;
 
       background:
         linear-gradient(
-          145deg,
-          #ffd56a,
-          #ad4f0b
+          to bottom,
+          transparent,
+          rgba(7, 3, 2, 0.96)
         );
 
-      color: #3a0c07;
-
-      font-weight: 900;
-
-      font-size: 12px;
-
-      letter-spacing: 0;
+      pointer-events: none;
     }
 
+    .hero-badge {
+      position: absolute;
+      z-index: 2;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
 
-    h1 {
-      font-size: 38px;
+      padding: 7px 18px;
 
+      color: #f3c65b;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3px;
+
+      border: 1px solid rgba(236, 178, 54, 0.65);
+      border-radius: 999px;
+
+      background: rgba(5, 5, 5, 0.72);
+      backdrop-filter: blur(10px);
+
+      box-shadow:
+        0 0 20px rgba(217, 144, 27, 0.18);
+    }
+
+    /* =========================
+       標題
+    ========================= */
+
+    .intro {
+      text-align: center;
+      padding: 25px 10px 10px;
+    }
+
+    .intro h1 {
+      font-size: 29px;
       font-weight: 900;
-
-      line-height: 1.18;
-
       letter-spacing: 3px;
 
       background:
         linear-gradient(
           180deg,
-          #fff7ce 0%,
-          #ffd45e 40%,
-          #b55a16 100%
+          #fff0a8 0%,
+          #f8c650 45%,
+          #b86d13 100%
         );
 
       -webkit-background-clip: text;
-
       -webkit-text-fill-color: transparent;
+      background-clip: text;
 
       filter:
-        drop-shadow(
-          0 8px 22px rgba(0, 0, 0, .38)
+        drop-shadow(0 3px 12px rgba(227, 142, 25, 0.25));
+    }
+
+    .slogan {
+      margin-top: 10px;
+
+      color: #e5d4b2;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+    }
+
+    .divider {
+      width: 52px;
+      height: 2px;
+
+      margin: 20px auto;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          #e6ad38,
+          transparent
         );
     }
 
-
-    .slogan {
-      margin-top: 12px;
-
-      color: #f5ead6;
-
-      font-size: 16px;
-
-      line-height: 1.7;
-
-      letter-spacing: 2px;
+    .welcome {
+      color: #b7aaa2;
+      font-size: 13px;
+      line-height: 1.8;
     }
-
 
     /* =========================
-       CONTENT
+       OFFICIAL LINKS
     ========================= */
-
-    .content {
-      padding:
-        26px
-        20px
-        125px;
-    }
-
-
-    .section {
-      margin-top: 22px;
-
-      animation:
-        fadeUp .7s ease both;
-    }
-
-
-    @keyframes fadeUp {
-
-      from {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-    }
-
 
     .section-title {
       display: flex;
-
       align-items: center;
-
       gap: 10px;
 
+      margin-top: 20px;
       margin-bottom: 14px;
 
-      color: #e3b45a;
+      color: #dba83d;
 
-      font-size: 13px;
-
-      font-weight: 700;
-
+      font-size: 12px;
+      font-weight: 800;
       letter-spacing: 2px;
     }
 
-
     .section-title::before {
       content: "";
-
       width: 28px;
-
       height: 2px;
 
       background:
         linear-gradient(
           90deg,
-          #f5bd45,
-          transparent
+          #f2bd47,
+          #8d5010
         );
     }
 
-
     /* =========================
-       ABOUT
-    ========================= */
-
-    .about {
-      padding: 20px;
-
-      border-radius: 22px;
-
-      border:
-        1px solid rgba(255, 199, 77, .12);
-
-      background:
-        linear-gradient(
-          145deg,
-          rgba(255, 255, 255, .06),
-          rgba(255, 255, 255, .02)
-        );
-
-      backdrop-filter: blur(10px);
-
-      -webkit-backdrop-filter: blur(10px);
-
-      box-shadow:
-        0 14px 35px rgba(0, 0, 0, .22);
-
-      color: #c7bbb0;
-
-      font-size: 14px;
-
-      line-height: 1.9;
-    }
-
-
-    .highlights {
-      display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
-      gap: 10px;
-
-      margin-top: 14px;
-    }
-
-
-    .highlight {
-      padding: 16px 8px;
-
-      text-align: center;
-
-      border-radius: 18px;
-
-      border:
-        1px solid rgba(255, 197, 74, .1);
-
-      background:
-        rgba(255, 255, 255, .035);
-    }
-
-
-    .highlight strong {
-      display: block;
-
-      margin-bottom: 5px;
-
-      color: #ffd76f;
-
-      font-size: 16px;
-    }
-
-
-    .highlight span {
-      color: #8f837d;
-
-      font-size: 11px;
-    }
-
-
-    /* =========================
-       LINKS
+       連結按鈕
     ========================= */
 
     .links {
       display: flex;
-
       flex-direction: column;
-
-      gap: 13px;
+      gap: 12px;
     }
-
 
     .link {
       position: relative;
 
       display: flex;
-
       align-items: center;
 
       min-height: 76px;
+      padding: 13px 18px;
 
-      padding: 0 18px;
+      overflow: hidden;
 
-      color: white;
-
-      text-decoration: none;
-
+      border: 1px solid rgba(202, 148, 48, 0.25);
       border-radius: 20px;
 
-      border:
-        1px solid rgba(255, 198, 74, .15);
-
       background:
         linear-gradient(
           135deg,
-          rgba(255, 255, 255, .065),
-          rgba(255, 255, 255, .022)
+          rgba(26, 23, 21, 0.96),
+          rgba(9, 9, 9, 0.98)
         );
 
-      backdrop-filter: blur(10px);
-
-      -webkit-backdrop-filter: blur(10px);
-
       box-shadow:
-        0 14px 34px rgba(0, 0, 0, .28),
-        inset 0 1px rgba(255, 255, 255, .05);
+        inset 0 1px 0 rgba(255, 255, 255, 0.03),
+        0 10px 30px rgba(0, 0, 0, 0.18);
 
       transition:
-        transform .22s ease,
-        border-color .22s ease,
-        box-shadow .22s ease;
+        transform 0.18s ease,
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
     }
-
-
-    .link:hover {
-      transform: translateY(-3px);
-
-      border-color:
-        rgba(255, 199, 71, .5);
-
-      box-shadow:
-        0 16px 38px rgba(125, 35, 10, .22);
-    }
-
 
     .link:active {
-      transform: scale(.98);
+      transform: scale(0.98);
     }
 
+    .link:hover {
+      border-color: rgba(235, 177, 58, 0.55);
 
-    .main-link {
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.28),
+        0 0 25px rgba(205, 119, 20, 0.08);
+    }
+
+    /* 平台網址特殊紅色 */
+
+    .link.main-link {
+      border-color: rgba(255, 177, 51, 0.58);
+
       background:
         linear-gradient(
           135deg,
-          rgba(124, 23, 11, .97),
-          rgba(48, 9, 6, .95)
+          #761b0e 0%,
+          #501006 100%
         );
 
-      border-color:
-        rgba(255, 188, 68, .42);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        0 8px 25px rgba(113, 18, 5, 0.22);
     }
-
 
     /* =========================
        ICON
     ========================= */
 
     .icon {
-      width: 50px;
+      width: 48px;
+      height: 48px;
 
-      height: 50px;
-
-      flex: 0 0 50px;
+      flex: 0 0 48px;
 
       display: flex;
-
       align-items: center;
-
       justify-content: center;
 
       margin-right: 14px;
 
-      border-radius: 15px;
+      border-radius: 14px;
 
       overflow: hidden;
-
-      box-shadow:
-        0 7px 18px rgba(0, 0, 0, .25);
-
-      font-weight: 900;
     }
 
+    .icon img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
 
     /* 紅中 */
 
-    .hongzhong-icon {
-      color: #411006;
+    .icon-hz {
+      color: #401300;
+      font-size: 17px;
+      font-weight: 900;
 
       background:
         linear-gradient(
           145deg,
-          #ffe07a 0%,
-          #efac2d 50%,
-          #a94f0c 100%
+          #ffd867,
+          #e99a20
         );
 
-      border:
-        1px solid rgba(255, 225, 130, .55);
+      border: 1px solid rgba(255, 218, 112, 0.7);
 
-      font-size: 15px;
+      box-shadow:
+        0 4px 15px rgba(241, 158, 27, 0.25);
     }
-
 
     /* LINE */
 
-    .line-icon {
-      color: #ffffff;
-
-      background: #06C755;
+    .icon-line {
+      background: #06c755;
     }
 
+    /* IG */
 
-    .line-icon i {
-      font-size: 31px;
-
-      line-height: 1;
-    }
-
-
-    /* Instagram */
-
-    .instagram-icon {
-      color: #ffffff;
-
+    .icon-ig {
       background:
         radial-gradient(
-          circle at 30% 100%,
+          circle at 30% 110%,
           #ffd600 0%,
-          #ff7a00 22%,
-          #ff0169 48%,
-          #d300c5 72%,
+          #ff7a00 30%,
+          #ff0169 55%,
+          #d300c5 78%,
           #7638fa 100%
         );
     }
 
-
-    .instagram-icon i {
-      font-size: 30px;
-
-      line-height: 1;
-    }
-
-
     /* Threads */
 
-    .threads-icon {
-      color: #090909;
-
+    .icon-threads {
       background: #ffffff;
     }
 
-
-    .threads-icon i {
-      font-size: 30px;
-
-      line-height: 1;
-    }
-
-
     /* =========================
-       LINK TEXT
+       文字
     ========================= */
 
-    .link-copy {
+    .link-text {
       min-width: 0;
-
-      text-align: left;
+      flex: 1;
     }
-
 
     .link-title {
       display: block;
@@ -692,681 +377,459 @@
       color: #ffffff;
 
       font-size: 16px;
-
       font-weight: 800;
-
-      letter-spacing: .3px;
+      letter-spacing: 0.2px;
     }
-
 
     .link-subtitle {
       display: block;
 
       margin-top: 4px;
 
-      color: #8e817b;
+      color: #938985;
 
       font-size: 11px;
+      line-height: 1.35;
     }
 
+    /* 推廣碼 */
+
+    .promo-code {
+      color: #e8bd5d;
+      font-weight: 650;
+    }
+
+    .promo-code strong {
+      color: #ffd45c;
+
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 1px;
+
+      text-shadow:
+        0 0 10px rgba(255, 200, 66, 0.38);
+    }
+
+    /* 箭頭 */
 
     .arrow {
-      margin-left: auto;
+      margin-left: 10px;
 
-      padding-left: 10px;
+      color: #dca72e;
 
-      color: #dda93f;
+      font-size: 22px;
+      font-weight: 400;
 
-      font-size: 24px;
-
-      line-height: 1;
+      transition: transform 0.18s ease;
     }
 
+    .link:hover .arrow {
+      transform: translateX(3px);
+    }
 
     /* =========================
-       FOOTER
+       Footer
     ========================= */
 
-    .footer {
-      margin-top: 35px;
+    footer {
+      padding: 34px 10px 20px;
 
       text-align: center;
 
-      color: #514843;
+      color: #625853;
 
-      font-size: 11px;
-
+      font-size: 10px;
       line-height: 1.8;
     }
 
-
-    .footer strong {
-      color: #92703b;
-
-      font-weight: 600;
+    footer strong {
+      color: #c99735;
+      font-weight: 700;
+      letter-spacing: 1px;
     }
-
 
     /* =========================
-       底部固定立即註冊
+       固定立即註冊
     ========================= */
 
-    .floating-contact {
+    .fixed-register {
       position: fixed;
 
-      z-index: 100;
+      z-index: 1000;
 
       left: 50%;
+      bottom: 18px;
 
-      bottom:
-        calc(
-          12px + env(safe-area-inset-bottom)
-        );
+      transform: translateX(-50%);
 
-      transform:
-        translateX(-50%);
-
-      width:
-        calc(100% - 28px);
-
-      max-width: 492px;
-
-      padding: 9px;
-
-      border-radius: 21px;
-
-      border:
-        1px solid rgba(255, 194, 68, .18);
-
-      background:
-        rgba(8, 5, 4, .88);
-
-      backdrop-filter:
-        blur(18px);
-
-      -webkit-backdrop-filter:
-        blur(18px);
-
-      box-shadow:
-        0 12px 40px rgba(0, 0, 0, .55);
+      width: calc(100% - 32px);
+      max-width: 488px;
     }
-
 
     .register-btn {
       position: relative;
 
-      width: 100%;
-
-      min-height: 58px;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
 
-      gap: 10px;
+      width: 100%;
+      min-height: 58px;
 
-      overflow: hidden;
+      color: #2c1300;
 
-      border-radius: 15px;
-
-      color: #ffffff;
-
-      text-decoration: none;
-
-      font-size: 17px;
-
+      font-size: 16px;
       font-weight: 900;
-
       letter-spacing: 2px;
+
+      border: 1px solid #ffda72;
+      border-radius: 18px;
 
       background:
         linear-gradient(
-          135deg,
-          #08d45d 0%,
-          #06c755 45%,
-          #049c42 100%
+          180deg,
+          #ffd96a 0%,
+          #e79b23 100%
         );
 
-      border:
-        1px solid rgba(255, 255, 255, .17);
-
       box-shadow:
-        0 8px 26px rgba(6, 199, 85, .28),
-        inset 0 1px rgba(255, 255, 255, .22);
+        0 10px 35px rgba(227, 143, 24, 0.28),
+        0 0 25px rgba(255, 184, 45, 0.14),
+        inset 0 1px 0 rgba(255, 255, 255, 0.55);
 
-      transition:
-        transform .18s ease,
-        box-shadow .18s ease;
+      transition: transform 0.15s ease;
     }
 
+    .register-btn:active {
+      transform: scale(0.98);
+    }
 
     .register-btn::before {
       content: "";
 
       position: absolute;
-
       top: 0;
+      left: 12%;
 
-      left: -120%;
-
-      width: 70%;
-
-      height: 100%;
-
-      transform: skewX(-20deg);
+      width: 40%;
+      height: 1px;
 
       background:
         linear-gradient(
           90deg,
           transparent,
-          rgba(255, 255, 255, .22),
+          rgba(255, 255, 255, 0.9),
           transparent
         );
-
-      animation:
-        shine 3.5s infinite;
     }
-
-
-    @keyframes shine {
-
-      0% {
-        left: -120%;
-      }
-
-      35%,
-      100% {
-        left: 150%;
-      }
-
-    }
-
-
-    .register-btn i {
-      position: relative;
-
-      z-index: 2;
-
-      font-size: 24px;
-    }
-
-
-    .register-btn span {
-      position: relative;
-
-      z-index: 2;
-    }
-
-
-    .register-btn:active {
-      transform: scale(.98);
-
-      box-shadow:
-        0 5px 18px rgba(6, 199, 85, .22);
-    }
-
 
     /* =========================
        手機
     ========================= */
 
-    @media (max-width: 420px) {
+    @media (max-width: 480px) {
 
-      .hero {
-        height: 560px;
+      .page {
+        padding-left: 12px;
+        padding-right: 12px;
       }
 
-
-      h1 {
-        font-size: 34px;
+      .intro h1 {
+        font-size: 27px;
       }
-
-
-      .slogan {
-        font-size: 14px;
-      }
-
-
-      .content {
-        padding-left: 16px;
-
-        padding-right: 16px;
-
-        padding-bottom: 125px;
-      }
-
 
       .link {
         min-height: 74px;
-
-        padding-left: 14px;
-
-        padding-right: 14px;
+        padding: 12px 15px;
       }
-
 
       .icon {
-        width: 48px;
-
-        height: 48px;
-
-        flex-basis: 48px;
-
-        margin-right: 13px;
+        width: 46px;
+        height: 46px;
+        flex-basis: 46px;
       }
 
-
-      .line-icon i {
-        font-size: 29px;
+      .link-title {
+        font-size: 15px;
       }
 
-
-      .instagram-icon i,
-      .threads-icon i {
-        font-size: 28px;
+      .fixed-register {
+        width: calc(100% - 24px);
+        bottom: 12px;
       }
-
-
-      .highlights {
-        gap: 8px;
-      }
-
-
-      .register-btn {
-        min-height: 56px;
-
-        font-size: 16px;
-      }
-
     }
-
 
   </style>
 </head>
 
-
 <body>
 
+  <main class="page">
 
-  <main class="site">
-
-
-    <!-- =====================
-         上方主視覺
-    ====================== -->
+    <!-- ======================
+         主圖
+    ======================= -->
 
     <section class="hero">
-
 
       <img
         src="hongzhong.png"
         alt="紅中娛樂城"
       >
 
-
-      <div class="hero-glow"></div>
-
-
-      <div class="hero-content">
-
-
-        <div class="brand-chip">
-
-          HONG ZHONG
-
-        </div>
-
-
-        <h1>
-
-          紅中娛樂城
-
-        </h1>
-
-
-        <p class="slogan">
-
-          黑網遇多了・紅中最保障
-
-        </p>
-
-
+      <div class="hero-badge">
+        HONG ZHONG
       </div>
-
 
     </section>
 
 
+    <!-- ======================
+         品牌
+    ======================= -->
 
-    <!-- =====================
-         主要內容
-    ====================== -->
+    <section class="intro">
 
-    <section class="content">
+      <h1>紅中娛樂城</h1>
 
-
-      <!-- ABOUT -->
-
-      <div class="section">
-
-
-        <div class="section-title">
-
-          ABOUT
-
-        </div>
-
-
-        <div class="about">
-
-          歡迎來到紅中娛樂城。<br>
-
-          集中官方入口、社群資訊與聯絡方式，
-          讓你快速找到正確管道，不再四處尋找。
-
-        </div>
-
-
-        <div class="highlights">
-
-
-          <div class="highlight">
-
-            <strong>
-              官方
-            </strong>
-
-            <span>
-              認明入口
-            </span>
-
-          </div>
-
-
-          <div class="highlight">
-
-            <strong>
-              快速
-            </strong>
-
-            <span>
-              一鍵聯絡
-            </span>
-
-          </div>
-
-
-          <div class="highlight">
-
-            <strong>
-              便利
-            </strong>
-
-            <span>
-              多平台整合
-            </span>
-
-          </div>
-
-
-        </div>
-
-
+      <div class="slogan">
+        黑網遇多了・紅中最保障
       </div>
 
-
-
-      <!-- OFFICIAL LINKS -->
-
-      <div class="section">
-
-
-        <div class="section-title">
-
-          OFFICIAL LINKS
-
-        </div>
-
-
-        <div class="links">
-
-
-
-          <!-- 平台網址 -->
-
-          <a
-            class="link main-link"
-            href="http://gm.fl8899.com/hz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-
-
-            <div class="icon hongzhong-icon">
-
-              中
-
-            </div>
-
-
-            <div class="link-copy">
-
-
-              <span class="link-title">
-
-                平台網址
-
-              </span>
-
-
-              <span class="link-subtitle">
-
-                進入紅中娛樂城
-
-              </span>
-
-
-            </div>
-
-
-            <span class="arrow">
-
-              ›
-
-            </span>
-
-
-          </a>
-
-
-
-          <!-- LINE -->
-
-          <a
-            class="link"
-            href="https://lin.ee/U1eXXfK"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-
-
-            <div class="icon line-icon">
-
-              <i class="fa-brands fa-line"></i>
-
-            </div>
-
-
-            <div class="link-copy">
-
-
-              <span class="link-title">
-
-                LINE 註冊
-
-              </span>
-
-
-              <span class="link-subtitle">
-
-                加入官方 LINE
-
-              </span>
-
-
-            </div>
-
-
-            <span class="arrow">
-
-              ›
-
-            </span>
-
-
-          </a>
-
-
-
-          <!-- Instagram -->
-
-          <a
-            class="link"
-            href="https://www.instagram.com/trun_888/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-
-
-            <div class="icon instagram-icon">
-
-              <i class="fa-brands fa-instagram"></i>
-
-            </div>
-
-
-            <div class="link-copy">
-
-
-              <span class="link-title">
-
-                Instagram
-
-              </span>
-
-
-              <span class="link-subtitle">
-
-                @trun_888
-
-              </span>
-
-
-            </div>
-
-
-            <span class="arrow">
-
-              ›
-
-            </span>
-
-
-          </a>
-
-
-
-          <!-- Threads -->
-
-          <a
-            class="link"
-            href="https://www.threads.com/@trun_888?igshid=NTc4MTIwNjQ2YQ=="
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-
-
-            <div class="icon threads-icon">
-
-              <i class="fa-brands fa-threads"></i>
-
-            </div>
-
-
-            <div class="link-copy">
-
-
-              <span class="link-title">
-
-                Threads
-
-              </span>
-
-
-              <span class="link-subtitle">
-
-                @trun_888
-
-              </span>
-
-
-            </div>
-
-
-            <span class="arrow">
-
-              ›
-
-            </span>
-
-
-          </a>
-
-
-        </div>
-
-
+      <div class="divider"></div>
+
+      <div class="welcome">
+        歡迎來到紅中娛樂城<br>
+        點選下方連結，快速找到我們
       </div>
-
-
-
-      <!-- FOOTER -->
-
-      <div class="footer">
-
-
-        <strong>
-
-          紅中娛樂城 HONG ZHONG
-
-        </strong>
-
-
-        <br>
-
-
-        Official Links
-
-
-      </div>
-
 
     </section>
 
+
+    <!-- ======================
+         官方連結
+    ======================= -->
+
+    <section>
+
+      <div class="section-title">
+        OFFICIAL LINKS
+      </div>
+
+      <div class="links">
+
+
+        <!-- 平台網址 -->
+
+        <a
+          class="link main-link"
+          href="http://gm.fl8899.com/hz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <div class="icon icon-hz">
+            中
+          </div>
+
+          <div class="link-text">
+
+            <span class="link-title">
+              紅中娛樂城
+            </span>
+
+            <span class="link-subtitle promo-code">
+              推廣碼務必輸入
+              <strong>55014</strong>
+            </span>
+
+          </div>
+
+          <span class="arrow">›</span>
+
+        </a>
+
+
+        <!-- LINE -->
+
+        <a
+          class="link"
+          href="https://lin.ee/U1eXXfK"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <div class="icon icon-line">
+
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#ffffff"
+                d="M24 9C15.7 9 9 14.4 9 21.1c0 6 5.3 11 12.5 12 .5.1 1.2.4 1.4.9.2.4.1 1.1.1 1.5l-.2 1.4c-.1.4-.3 1.7 1.5.9 1.8-.8 9.8-5.8 13.4-9.9 2.5-2.7 3.3-5.5 3.3-6.8C41 14.4 34.3 9 24 9Z"
+              />
+            </svg>
+
+          </div>
+
+          <div class="link-text">
+
+            <span class="link-title">
+              官方 LINE
+            </span>
+
+            <span class="link-subtitle">
+              LINE註冊・快速聯絡
+            </span>
+
+          </div>
+
+          <span class="arrow">›</span>
+
+        </a>
+
+
+        <!-- Instagram -->
+
+        <a
+          class="link"
+          href="https://www.instagram.com/trun_888/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <div class="icon icon-ig">
+
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+              />
+
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+              />
+
+              <circle
+                cx="17.4"
+                cy="6.7"
+                r="1.2"
+                fill="#ffffff"
+              />
+
+            </svg>
+
+          </div>
+
+          <div class="link-text">
+
+            <span class="link-title">
+              Instagram
+            </span>
+
+            <span class="link-subtitle">
+              @trun_888
+            </span>
+
+          </div>
+
+          <span class="arrow">›</span>
+
+        </a>
+
+
+        <!-- Threads -->
+
+        <a
+          class="link"
+          href="https://www.threads.com/@trun_888?igshid=NTc4MTIwNjQ2YQ=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <div class="icon icon-threads">
+
+            <svg
+              width="31"
+              height="31"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+
+              <path
+                fill="#000000"
+                d="M12.2 2C6.5 2 3 5.8 3 11.9c0 6.2 3.6 10.1 9.4 10.1 5.1 0 8.6-2.9 8.6-7.1 0-3.3-1.9-5.4-5.3-6.2-.5-2.5-2.1-3.9-4.7-3.9-2.1 0-3.8 1-4.8 2.7l1.8 1.2c.7-1.2 1.7-1.8 3-1.8 1.4 0 2.3.6 2.7 1.7-.5 0-1 0-1.5.1-3.5.4-5.5 2.1-5.5 4.7 0 2.5 2 4.3 4.8 4.3 2.9 0 4.8-1.7 4.8-4.2 0-.8-.1-1.5-.2-2.1 1.8.7 2.7 1.9 2.7 3.6 0 2.9-2.4 4.8-6.3 4.8-4.6 0-7.2-2.9-7.2-7.9 0-4.9 2.5-7.7 7-7.7 3.7 0 6.1 1.9 6.9 5.5l2.2-.5C20.4 4.6 17.2 2 12.2 2Zm-.8 13.5c-1.5 0-2.5-.8-2.5-2 0-1.3 1.1-2.2 3.5-2.5.6-.1 1.2-.1 1.7 0 .1.6.2 1.2.2 1.8 0 1.7-1.1 2.7-2.9 2.7Z"
+              />
+
+            </svg>
+
+          </div>
+
+          <div class="link-text">
+
+            <span class="link-title">
+              Threads
+            </span>
+
+            <span class="link-subtitle">
+              @trun_888
+            </span>
+
+          </div>
+
+          <span class="arrow">›</span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ======================
+         Footer
+    ======================= -->
+
+    <footer>
+
+      <strong>
+        紅中娛樂城 HONG ZHONG
+      </strong>
+
+      <br>
+
+      Official Links
+
+    </footer>
 
   </main>
 
 
+  <!-- ======================
+       固定立即註冊
+  ======================= -->
 
-  <!-- =====================
-       底部固定按鈕
-       點擊直接跳 LINE
-  ====================== -->
-
-  <div class="floating-contact">
-
+  <div class="fixed-register">
 
     <a
       class="register-btn"
@@ -1374,24 +837,10 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-
-
-      <i class="fa-brands fa-line"></i>
-
-
-      <span>
-
-        立即註冊
-
-      </span>
-
-
+      立即註冊
     </a>
-
 
   </div>
 
-
 </body>
-
 </html>
