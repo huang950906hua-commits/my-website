@@ -580,6 +580,21 @@
 
 <body>
 
+  <!-- =========================
+       背景音樂
+       不顯示播放器
+       自動嘗試播放 + 循環
+  ========================== -->
+
+  <audio
+    id="bgMusic"
+    src="背景音樂.mp3"
+    preload="auto"
+    loop
+    playsinline
+  ></audio>
+
+
   <main class="page">
 
     <!-- 上方主圖 -->
@@ -816,6 +831,79 @@
   >
     立即註冊
   </a>
+
+
+  <!-- =========================
+       背景音樂控制
+  ========================== -->
+
+  <script>
+    const bgMusic = document.getElementById("bgMusic");
+
+    // 背景音樂音量：35%
+    bgMusic.volume = 0.35;
+
+    let musicStarted = false;
+
+    function startBackgroundMusic() {
+
+      if (musicStarted && !bgMusic.paused) {
+        return;
+      }
+
+      const playPromise = bgMusic.play();
+
+      if (playPromise !== undefined) {
+
+        playPromise
+          .then(() => {
+            musicStarted = true;
+          })
+          .catch(() => {
+            // 瀏覽器阻擋自動播放時，
+            // 等待使用者第一次操作頁面
+          });
+
+      }
+    }
+
+
+    // 網頁載入完成後先嘗試直接播放
+    window.addEventListener("load", () => {
+      startBackgroundMusic();
+    });
+
+
+    // 手機第一次碰觸畫面時播放
+    document.addEventListener(
+      "touchstart",
+      startBackgroundMusic,
+      { once: true, passive: true }
+    );
+
+
+    // 點擊畫面時播放
+    document.addEventListener(
+      "click",
+      startBackgroundMusic,
+      { once: true }
+    );
+
+
+    // iPhone / Safari 有時切回網頁後會暫停
+    // 回到網站時再次嘗試播放
+    document.addEventListener("visibilitychange", () => {
+
+      if (
+        document.visibilityState === "visible" &&
+        musicStarted &&
+        bgMusic.paused
+      ) {
+        bgMusic.play().catch(() => {});
+      }
+
+    });
+  </script>
 
 </body>
 </html>
