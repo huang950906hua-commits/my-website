@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="UTF-8">
 
@@ -8,11 +9,19 @@
     content="width=device-width, initial-scale=1.0, viewport-fit=cover"
   >
 
-  <meta name="theme-color" content="#050403">
+  <title>紅中娛樂｜優惠活動</title>
 
-  <title>紅中娛樂城｜官方連結</title>
+  <meta
+    name="description"
+    content="紅中娛樂最新優惠活動"
+  >
 
   <style>
+
+    /* =========================
+       基本設定
+    ========================= */
+
     * {
       margin: 0;
       padding: 0;
@@ -25,6 +34,16 @@
 
     body {
       min-height: 100vh;
+      background:
+        radial-gradient(
+          circle at top,
+          #291200 0%,
+          #100700 30%,
+          #050505 65%,
+          #000000 100%
+        );
+
+      color: #ffffff;
 
       font-family:
         -apple-system,
@@ -32,152 +51,77 @@
         "Segoe UI",
         "Noto Sans TC",
         "Microsoft JhengHei",
-        Arial,
         sans-serif;
 
-      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+
+    /* =========================
+       背景金色光暈
+    ========================= */
+
+    body::before {
+      content: "";
+      position: fixed;
+
+      width: 420px;
+      height: 420px;
+
+      top: -180px;
+      left: 50%;
+
+      transform: translateX(-50%);
 
       background:
         radial-gradient(
-          circle at 50% 0%,
-          rgba(117, 21, 8, 0.30),
-          transparent 36%
-        ),
-        linear-gradient(
-          180deg,
-          #100503 0%,
-          #070403 42%,
-          #020202 100%
-        );
-
-      padding-bottom: 110px;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    /* =========================
-       整體容器
-    ========================= */
-
-    .page {
-      width: 100%;
-      max-width: 520px;
-      margin: 0 auto;
-      padding: 0 14px 40px;
-    }
-
-    /* =========================
-       上方主視覺
-    ========================= */
-
-    .hero {
-      position: relative;
-
-      width: 100%;
-      height: 255px;
-
-      overflow: hidden;
-
-      border-radius: 0 0 24px 24px;
-
-      border-left:
-        1px solid rgba(231, 171, 45, 0.22);
-
-      border-right:
-        1px solid rgba(231, 171, 45, 0.22);
-
-      border-bottom:
-        1px solid rgba(231, 171, 45, 0.28);
-
-      box-shadow:
-        0 18px 50px rgba(0, 0, 0, 0.45),
-        0 0 30px rgba(177, 44, 13, 0.08);
-
-      background: #130604;
-    }
-
-    .hero img {
-      width: 100%;
-      height: 100%;
-
-      object-fit: cover;
-      object-position: center 45%;
-
-      display: block;
-    }
-
-    .hero::after {
-      content: "";
-
-      position: absolute;
-      inset: 0;
-
-      background:
-        linear-gradient(
-          180deg,
-          transparent 40%,
-          rgba(5, 2, 1, 0.12) 60%,
-          rgba(5, 2, 1, 0.92) 100%
+          circle,
+          rgba(255, 181, 35, 0.17),
+          transparent 70%
         );
 
       pointer-events: none;
+      z-index: -1;
     }
+
 
     /* =========================
-       品牌區
+       主容器
     ========================= */
 
-    .brand {
-      text-align: center;
+    .container {
+      width: min(100%, 1050px);
+      margin: 0 auto;
 
-      margin-top: -16px;
-
-      position: relative;
-      z-index: 5;
+      padding:
+        42px
+        18px
+        150px;
     }
 
-    .brand-tag {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
 
-      min-width: 138px;
+    /* =========================
+       頂部標題
+    ========================= */
 
-      padding: 7px 18px;
+    .hero {
+      text-align: center;
+      margin-bottom: 34px;
+    }
 
-      border-radius: 999px;
+    .brand-small {
+      color: #d9a631;
 
-      background:
-        linear-gradient(
-          180deg,
-          rgba(25, 16, 8, 0.96),
-          rgba(8, 6, 4, 0.96)
-        );
-
-      border:
-        1px solid rgba(224, 166, 47, 0.60);
-
-      color: #e9b843;
-
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 800;
 
-      letter-spacing: 3px;
+      letter-spacing: 5px;
 
-      box-shadow:
-        0 5px 18px rgba(0, 0, 0, 0.45),
-        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      margin-bottom: 12px;
     }
 
-    .brand h1 {
-      margin-top: 15px;
-
-      font-size: 29px;
-      line-height: 1.2;
+    .hero h1 {
+      font-size: clamp(30px, 6vw, 48px);
 
       font-weight: 900;
 
@@ -186,9 +130,10 @@
       background:
         linear-gradient(
           180deg,
-          #fff1a6 0%,
-          #eebd46 38%,
-          #c98617 100%
+          #fff7cf 0%,
+          #ffd86c 32%,
+          #d79616 70%,
+          #fff0a3 100%
         );
 
       -webkit-background-clip: text;
@@ -197,264 +142,382 @@
       color: transparent;
 
       text-shadow:
-        0 4px 20px rgba(220, 134, 19, 0.12);
+        0 0 30px rgba(255, 179, 31, 0.12);
     }
 
-    .slogan {
+    .hero p {
       margin-top: 10px;
 
-      color: #f4dfb3;
+      color: #c9c9c9;
 
       font-size: 14px;
-      font-weight: 600;
 
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
     }
 
+
     /* =========================
-       小裝飾
+       金色分隔線
     ========================= */
 
-    .gold-divider {
-      width: 46px;
+    .gold-line {
+      width: 80px;
       height: 2px;
 
-      margin: 20px auto;
-
-      border-radius: 20px;
+      margin: 22px auto 0;
 
       background:
         linear-gradient(
           90deg,
           transparent,
-          #d89a27,
-          #ffe19a,
-          #d89a27,
+          #ffbe35,
           transparent
         );
-
-      box-shadow:
-        0 0 12px rgba(225, 167, 48, 0.25);
     }
+
 
     /* =========================
-       說明
+       活動區
     ========================= */
 
-    .intro {
-      text-align: center;
-
-      margin-bottom: 28px;
-
-      color: #bdb5ac;
-
-      font-size: 13px;
-      line-height: 1.8;
-
-      letter-spacing: 0.5px;
-    }
-
-    .intro strong {
-      color: #ead7b0;
-      font-weight: 700;
-    }
-
-    /* =========================
-       OFFICIAL LINKS
-    ========================= */
-
-    .section-title {
-      display: flex;
-      align-items: center;
-
-      gap: 10px;
-
-      margin-bottom: 12px;
-
-      color: #dca934;
-
-      font-size: 12px;
-      font-weight: 900;
-
-      letter-spacing: 2px;
-    }
-
-    .section-title::before {
-      content: "";
-
-      width: 28px;
-      height: 2px;
-
-      background:
-        linear-gradient(
-          90deg,
-          #e2a82f,
-          rgba(226, 168, 47, 0)
-        );
-    }
-
-    /* =========================
-       按鈕
-    ========================= */
-
-    .links {
+    .promo-list {
       display: flex;
       flex-direction: column;
 
-      gap: 12px;
+      gap: 30px;
     }
 
-    .link {
+    .promo {
       position: relative;
 
-      display: flex;
-      align-items: center;
-
       width: 100%;
-      min-height: 76px;
 
-      padding: 12px 48px 12px 16px;
+      border-radius: 22px;
 
-      color: #ffffff;
-
-      border-radius: 21px;
+      overflow: hidden;
 
       background:
         linear-gradient(
           145deg,
-          rgba(22, 21, 20, 0.98),
-          rgba(9, 9, 9, 0.98)
+          rgba(35, 26, 13, 0.95),
+          rgba(7, 7, 7, 0.98)
         );
 
       border:
-        1px solid rgba(201, 146, 35, 0.30);
+        1px solid rgba(224, 164, 42, 0.55);
 
       box-shadow:
-        0 8px 26px rgba(0, 0, 0, 0.25),
-        inset 0 1px 0 rgba(255, 255, 255, 0.035);
+        0 15px 45px rgba(0, 0, 0, 0.55),
+        0 0 30px rgba(255, 177, 32, 0.05);
 
       transition:
-        transform 0.18s ease,
-        border-color 0.18s ease;
+        transform 0.25s ease,
+        border-color 0.25s ease;
     }
 
-    .link:active {
-      transform: scale(0.985);
-    }
+    .promo:hover {
+      transform: translateY(-3px);
 
-    .link:hover {
       border-color:
-        rgba(229, 174, 55, 0.62);
+        rgba(255, 193, 59, 0.95);
     }
 
-    .link.platform {
-      background:
-        linear-gradient(
-          135deg,
-          #76170d 0%,
-          #4d0e08 100%
-        );
-
-      border:
-        1px solid rgba(235, 166, 34, 0.70);
-
-      box-shadow:
-        0 9px 30px rgba(113, 18, 8, 0.25),
-        inset 0 1px 0 rgba(255, 255, 255, 0.08);
-    }
 
     /* =========================
-       圖標
+       活動圖片
     ========================= */
 
-    .icon {
-      width: 50px;
-      height: 50px;
-
-      flex: 0 0 50px;
-
-      margin-right: 14px;
-
-      border-radius: 14px;
-
-      overflow: hidden;
-
-      background: #111;
-
-      box-shadow:
-        0 6px 18px rgba(0, 0, 0, 0.28);
-    }
-
-    .icon img {
+    .promo img {
       display: block;
 
       width: 100%;
+      height: auto;
+
+      object-fit: contain;
+
+      background: #000000;
+    }
+
+
+    /* =========================
+       圖片下方文字
+    ========================= */
+
+    .promo-info {
+      padding: 18px 20px 20px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 15px;
+    }
+
+    .promo-left {
+      display: flex;
+
+      align-items: center;
+
+      gap: 14px;
+    }
+
+    .promo-number {
+      min-width: 44px;
+      height: 44px;
+
+      border-radius: 12px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      font-weight: 900;
+
+      color: #1b1000;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffe28b,
+          #d79514
+        );
+
+      box-shadow:
+        0 0 20px rgba(255, 185, 42, 0.18);
+    }
+
+    .promo-title {
+      font-size: 18px;
+
+      font-weight: 900;
+
+      color: #ffffff;
+
+      letter-spacing: 1px;
+    }
+
+    .promo-sub {
+      margin-top: 4px;
+
+      font-size: 12px;
+
+      color: #a9a9a9;
+    }
+
+
+    /* =========================
+       最底部平台區
+    ========================= */
+
+    .platform-section {
+      margin-top: 80px;
+
+      padding-top: 45px;
+
+      border-top:
+        1px solid rgba(255, 190, 52, 0.22);
+
+      text-align: center;
+    }
+
+    .platform-section h2 {
+      font-size: 26px;
+
+      color: #f4c654;
+
+      letter-spacing: 2px;
+    }
+
+    .platform-section > p {
+      margin-top: 10px;
+
+      color: #a9a9a9;
+
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       平台按鈕
+    ========================= */
+
+    .platform-button {
+      max-width: 620px;
+
+      margin:
+        25px
+        auto
+        0;
+
+      padding:
+        20px
+        22px;
+
+      display: flex;
+
+      align-items: center;
+
+      text-decoration: none;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #781509,
+          #4a0c05
+        );
+
+      border:
+        1px solid #e0a126;
+
+      box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.45),
+        inset 0 0 25px rgba(255, 180, 30, 0.04);
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .platform-button:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 14px 40px rgba(0, 0, 0, 0.55),
+        0 0 25px rgba(255, 178, 25, 0.12);
+    }
+
+    .platform-icon {
+      width: 54px;
+      height: 54px;
+
+      flex: 0 0 54px;
+
+      border-radius: 15px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      margin-right: 16px;
+
+      font-size: 25px;
+      font-weight: 900;
+
+      color: #371b00;
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffe17b,
+          #d98b0d
+        );
+    }
+
+    .platform-text {
+      text-align: left;
+
+      flex: 1;
+    }
+
+    .platform-title {
+      color: #ffffff;
+
+      font-size: 18px;
+
+      font-weight: 900;
+    }
+
+    .platform-desc {
+      margin-top: 4px;
+
+      color: #d1d1d1;
+
+      font-size: 12px;
+    }
+
+    .promo-code {
+      margin-top: 5px;
+
+      color: #ffd255;
+
+      font-size: 13px;
+
+      font-weight: 900;
+    }
+
+    .arrow {
+      margin-left: 12px;
+
+      color: #ffc63c;
+
+      font-size: 23px;
+    }
+
+
+    /* =========================
+       右下角社群固定按鈕
+    ========================= */
+
+    .social-fixed {
+      position: fixed;
+
+      right: 16px;
+
+      bottom:
+        calc(
+          18px + env(safe-area-inset-bottom)
+        );
+
+      z-index: 9999;
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 11px;
+    }
+
+    .social-button {
+      width: 50px;
+      height: 50px;
+
+      display: block;
+
+      border-radius: 15px;
+
+      overflow: hidden;
+
+      background: #111111;
+
+      border:
+        1px solid rgba(255, 190, 45, 0.35);
+
+      box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.6);
+
+      transition:
+        transform 0.2s ease;
+    }
+
+    .social-button:hover {
+      transform: scale(1.08);
+    }
+
+    .social-button img {
+      width: 100%;
       height: 100%;
+
+      display: block;
 
       object-fit: cover;
     }
 
-    /* =========================
-       文字
-    ========================= */
-
-    .link-text {
-      min-width: 0;
-
-      display: flex;
-      flex-direction: column;
-
-      gap: 4px;
-    }
-
-    .link-title {
-      color: #ffffff;
-
-      font-size: 16px;
-      font-weight: 850;
-
-      letter-spacing: 0.2px;
-    }
-
-    .link-subtitle {
-      color: #918b84;
-
-      font-size: 11px;
-
-      line-height: 1.4;
-
-      letter-spacing: 0.15px;
-    }
-
-    .platform .link-subtitle {
-      color: #dfb89e;
-    }
-
-    .promo-code {
-      display: inline-block;
-
-      margin-top: 2px;
-
-      color: #ffd56c;
-
-      font-size: 11px;
-      font-weight: 800;
-
-      letter-spacing: 0.4px;
-    }
-
-    .arrow {
-      position: absolute;
-
-      right: 18px;
-      top: 50%;
-
-      transform: translateY(-50%);
-
-      color: #e6ae30;
-
-      font-size: 22px;
-    }
 
     /* =========================
        Footer
@@ -463,374 +526,498 @@
     footer {
       text-align: center;
 
-      margin-top: 34px;
+      padding-top: 55px;
 
-      padding-bottom: 8px;
+      color: #777777;
 
-      color: #6f6962;
+      font-size: 11px;
 
-      font-size: 10px;
-      line-height: 1.8;
-
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
     }
 
-    footer strong {
-      color: #c7952e;
-      font-weight: 700;
+    .footer-brand {
+      color: #b98a2d;
+
+      margin-bottom: 6px;
     }
+
 
     /* =========================
-       固定立即註冊
+       手機版
     ========================= */
 
-    .fixed-register {
-      position: fixed;
+    @media (max-width: 600px) {
 
-      left: 50%;
-      bottom:
-        calc(14px + env(safe-area-inset-bottom));
-
-      transform: translateX(-50%);
-
-      z-index: 999;
-
-      width: calc(100% - 28px);
-      max-width: 492px;
-
-      height: 58px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 18px;
-
-      color: #351500;
-
-      font-size: 17px;
-      font-weight: 900;
-
-      letter-spacing: 2px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #ffe27c 0%,
-          #d9941d 46%,
-          #ffcc55 100%
-        );
-
-      border:
-        1px solid rgba(255, 235, 169, 0.70);
-
-      box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.55),
-        0 4px 22px rgba(221, 147, 27, 0.25),
-        inset 0 1px 0 rgba(255, 255, 255, 0.50);
-
-      transition:
-        transform 0.18s ease,
-        filter 0.18s ease;
-    }
-
-    .fixed-register:active {
-      transform:
-        translateX(-50%)
-        scale(0.98);
-    }
-
-    /* =========================
-       手機
-    ========================= */
-
-    @media (max-width: 420px) {
-
-      .page {
-        padding-left: 12px;
-        padding-right: 12px;
+      .container {
+        padding:
+          30px
+          10px
+          135px;
       }
 
       .hero {
-        height: 235px;
+        margin-bottom: 25px;
       }
 
-      .brand h1 {
-        font-size: 27px;
+      .hero h1 {
+        font-size: 31px;
       }
 
-      .link {
-        min-height: 74px;
+      .brand-small {
+        font-size: 10px;
+
+        letter-spacing: 4px;
       }
 
-      .icon {
-        width: 48px;
-        height: 48px;
-
-        flex-basis: 48px;
+      .hero p {
+        font-size: 12px;
       }
 
-      .link-title {
+      .promo-list {
+        gap: 18px;
+      }
+
+      .promo {
+        border-radius: 15px;
+      }
+
+      .promo-info {
+        padding: 13px 14px 15px;
+      }
+
+      .promo-number {
+        min-width: 38px;
+        height: 38px;
+
+        border-radius: 10px;
+
+        font-size: 13px;
+      }
+
+      .promo-title {
         font-size: 15px;
       }
+
+      .promo-sub {
+        font-size: 11px;
+      }
+
+      .platform-section {
+        margin-top: 55px;
+      }
+
+      .platform-button {
+        padding: 16px 14px;
+
+        border-radius: 16px;
+      }
+
+      .platform-icon {
+        width: 47px;
+        height: 47px;
+
+        flex-basis: 47px;
+
+        margin-right: 12px;
+
+        font-size: 21px;
+      }
+
+      .platform-title {
+        font-size: 16px;
+      }
+
+      .promo-code {
+        font-size: 12px;
+      }
+
+      .social-fixed {
+        right: 10px;
+
+        gap: 8px;
+      }
+
+      .social-button {
+        width: 45px;
+        height: 45px;
+
+        border-radius: 13px;
+      }
+
     }
 
   </style>
 </head>
 
+
 <body>
+
 
   <!-- =========================
        背景音樂
-       不顯示播放器
-       自動嘗試播放 + 循環
   ========================== -->
 
   <audio
     id="bgMusic"
     src="背景音樂.mp3"
-    preload="auto"
     loop
-    playsinline
+    preload="auto"
   ></audio>
 
 
-  <main class="page">
+  <!-- =========================
+       右下角固定社群
+  ========================== -->
 
-    <!-- 上方主圖 -->
-    <section class="hero">
+  <div class="social-fixed">
 
+    <!-- LINE -->
+    <a
+      class="social-button"
+      href="https://lin.ee/U1eXXfK"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LINE"
+    >
       <img
-        src="hongzhong.png"
-        alt="紅中娛樂城"
+        src="line-icon.png"
+        alt="LINE"
       >
+    </a>
 
-    </section>
+
+    <!-- Instagram -->
+    <a
+      class="social-button"
+      href="https://www.instagram.com/trun_888/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+    >
+      <img
+        src="instagram-icon.png"
+        alt="Instagram"
+      >
+    </a>
 
 
-    <!-- 品牌 -->
-    <section class="brand">
+    <!-- Threads -->
+    <a
+      class="social-button"
+      href="https://www.threads.com/@trun_888"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Threads"
+    >
+      <img
+        src="threads-icon.png"
+        alt="Threads"
+      >
+    </a>
 
-      <div class="brand-tag">
-        HONG ZHONG
+  </div>
+
+
+
+  <!-- =========================
+       網頁主體
+  ========================== -->
+
+  <main class="container">
+
+
+    <!-- 頂部 -->
+
+    <header class="hero">
+
+      <div class="brand-small">
+        HONG ZHONG ENTERTAINMENT
       </div>
 
       <h1>
-        紅中娛樂城
+        紅中優惠活動
       </h1>
 
-      <div class="slogan">
-        黑網遇多了・紅中最保障
-      </div>
+      <p>
+        精選會員活動・更多福利往下看
+      </p>
+
+      <div class="gold-line"></div>
+
+    </header>
+
+
+
+    <!-- =========================
+         五個活動
+    ========================== -->
+
+    <section class="promo-list">
+
+
+      <!-- 01 首儲 -->
+
+      <article class="promo">
+
+        <img
+          src="promo1.png"
+          alt="首儲活動"
+        >
+
+        <div class="promo-info">
+
+          <div class="promo-left">
+
+            <div class="promo-number">
+              01
+            </div>
+
+            <div>
+
+              <div class="promo-title">
+                首儲活動
+              </div>
+
+              <div class="promo-sub">
+                每人限一次
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- 02 百家連續過關 -->
+
+      <article class="promo">
+
+        <img
+          src="promo2.png"
+          alt="百家連續過關活動"
+        >
+
+        <div class="promo-info">
+
+          <div class="promo-left">
+
+            <div class="promo-number">
+              02
+            </div>
+
+            <div>
+
+              <div class="promo-title">
+                百家連續過關活動
+              </div>
+
+              <div class="promo-sub">
+                連勝越多・獎勵越高
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- 03 電子活動 -->
+
+      <article class="promo">
+
+        <img
+          src="promo3.png"
+          alt="電子遊戲活動"
+        >
+
+        <div class="promo-info">
+
+          <div class="promo-left">
+
+            <div class="promo-number">
+              03
+            </div>
+
+            <div>
+
+              <div class="promo-title">
+                電子千倍活動
+              </div>
+
+              <div class="promo-sub">
+                任意電子遊戲
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- 04 介紹金 -->
+
+      <article class="promo">
+
+        <img
+          src="promo4.png"
+          alt="介紹金活動"
+        >
+
+        <div class="promo-info">
+
+          <div class="promo-left">
+
+            <div class="promo-number">
+              04
+            </div>
+
+            <div>
+
+              <div class="promo-title">
+                介紹金活動
+              </div>
+
+              <div class="promo-sub">
+                介紹越多・領取越多
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- 05 VIP -->
+
+      <article class="promo">
+
+        <img
+          src="promo5.png"
+          alt="VIP 尊榮特享"
+        >
+
+        <div class="promo-info">
+
+          <div class="promo-left">
+
+            <div class="promo-number">
+              05
+            </div>
+
+            <div>
+
+              <div class="promo-title">
+                VIP 尊榮特享
+              </div>
+
+              <div class="promo-sub">
+                VIP 會員專屬回饋
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
 
     </section>
 
 
-    <div class="gold-divider"></div>
 
+    <!-- =========================
+         最底部平台網址
+    ========================== -->
 
-    <div class="intro">
+    <section class="platform-section">
 
-      歡迎來到
-      <strong>紅中娛樂城</strong>
-
-      <br>
-
-      點選下方連結，快速找到我們
-
-    </div>
-
-
-    <!-- 官方連結 -->
-    <section>
-
-      <div class="section-title">
-        OFFICIAL LINKS
+      <div class="brand-small">
+        OFFICIAL PLATFORM
       </div>
 
+      <h2>
+        平台網址
+      </h2>
 
-      <div class="links">
+      <p>
+        查看完活動後，可由下方進入平台
+      </p>
 
-        <!-- 平台網址 -->
-        <a
-          class="link platform"
-          href="http://gm.fl8899.com/hz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
 
-          <div class="icon">
+      <a
+        class="platform-button"
+        href="http://gm.fl8899.com/hz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
 
-            <img
-              src="hongzhong-icon.png"
-              alt="紅中娛樂城"
-            >
+        <div class="platform-icon">
+          中
+        </div>
 
+
+        <div class="platform-text">
+
+          <div class="platform-title">
+            進入紅中娛樂
           </div>
 
-
-          <div class="link-text">
-
-            <span class="link-title">
-              平台網址
-            </span>
-
-            <span class="link-subtitle">
-              進入紅中娛樂城
-            </span>
-
-            <span class="promo-code">
-              推廣碼務必輸入 55014
-            </span>
-
+          <div class="platform-desc">
+            點擊前往平台
           </div>
 
-          <span class="arrow">
-            ›
-          </span>
-
-        </a>
-
-
-        <!-- LINE -->
-        <a
-          class="link"
-          href="https://lin.ee/U1eXXfK"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-
-          <div class="icon">
-
-            <img
-              src="line-icon.png"
-              alt="LINE"
-            >
-
+          <div class="promo-code">
+            推廣碼務必輸入 55014
           </div>
 
-
-          <div class="link-text">
-
-            <span class="link-title">
-              LINE 註冊
-            </span>
-
-            <span class="link-subtitle">
-              加入好友・快速聯絡
-            </span>
-
-          </div>
-
-          <span class="arrow">
-            ›
-          </span>
-
-        </a>
+        </div>
 
 
-        <!-- Instagram -->
-        <a
-          class="link"
-          href="https://www.instagram.com/trun_888/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div class="arrow">
+          ›
+        </div>
 
-          <div class="icon">
-
-            <img
-              src="instagram-icon.png"
-              alt="Instagram"
-            >
-
-          </div>
-
-
-          <div class="link-text">
-
-            <span class="link-title">
-              Instagram
-            </span>
-
-            <span class="link-subtitle">
-              @trun_888
-            </span>
-
-          </div>
-
-          <span class="arrow">
-            ›
-          </span>
-
-        </a>
-
-
-        <!-- Threads -->
-        <a
-          class="link"
-          href="https://www.threads.com/@trun_888?igshid=NTc4MTIwNjQ2YQ=="
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-
-          <div class="icon">
-
-            <img
-              src="threads-icon.png"
-              alt="Threads"
-            >
-
-          </div>
-
-
-          <div class="link-text">
-
-            <span class="link-title">
-              Threads
-            </span>
-
-            <span class="link-subtitle">
-              @trun_888
-            </span>
-
-          </div>
-
-          <span class="arrow">
-            ›
-          </span>
-
-        </a>
-
-      </div>
+      </a>
 
     </section>
 
+
+
+    <!-- Footer -->
 
     <footer>
 
-      <strong>
-        紅中娛樂城 HONG ZHONG
-      </strong>
+      <div class="footer-brand">
+        紅中娛樂・HONG ZHONG
+      </div>
 
-      <br>
-
-      Official Links
+      <div>
+        Official Links
+      </div>
 
     </footer>
 
+
   </main>
 
-
-  <!-- 固定立即註冊 -->
-  <a
-    class="fixed-register"
-    href="https://lin.ee/U1eXXfK"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    立即註冊
-  </a>
 
 
   <!-- =========================
@@ -838,72 +1025,81 @@
   ========================== -->
 
   <script>
-    const bgMusic = document.getElementById("bgMusic");
 
-    // 背景音樂音量：35%
-    bgMusic.volume = 0.35;
+    const bgMusic =
+      document.getElementById("bgMusic");
 
-    let musicStarted = false;
+    bgMusic.volume = 0.45;
 
-    function startBackgroundMusic() {
 
-      if (musicStarted && !bgMusic.paused) {
-        return;
-      }
+    /*
+      瀏覽器允許時直接播放
+    */
 
-      const playPromise = bgMusic.play();
+    function tryPlayMusic() {
 
-      if (playPromise !== undefined) {
+      bgMusic
+        .play()
+        .catch(() => {
+          /*
+            Chrome / Safari
+            可能禁止未互動自動播放。
+            使用者第一次點擊或觸碰後再播放。
+          */
+        });
 
-        playPromise
-          .then(() => {
-            musicStarted = true;
-          })
-          .catch(() => {
-            // 瀏覽器阻擋自動播放時，
-            // 等待使用者第一次操作頁面
-          });
-
-      }
     }
 
 
-    // 網頁載入完成後先嘗試直接播放
-    window.addEventListener("load", () => {
-      startBackgroundMusic();
-    });
-
-
-    // 手機第一次碰觸畫面時播放
-    document.addEventListener(
-      "touchstart",
-      startBackgroundMusic,
-      { once: true, passive: true }
+    window.addEventListener(
+      "load",
+      tryPlayMusic
     );
 
 
-    // 點擊畫面時播放
+    /*
+      第一次點擊網頁後播放
+    */
+
     document.addEventListener(
       "click",
-      startBackgroundMusic,
-      { once: true }
+      function startMusic() {
+
+        tryPlayMusic();
+
+        document.removeEventListener(
+          "click",
+          startMusic
+        );
+
+      }
     );
 
 
-    // iPhone / Safari 有時切回網頁後會暫停
-    // 回到網站時再次嘗試播放
-    document.addEventListener("visibilitychange", () => {
+    /*
+      手機第一次觸碰後播放
+    */
 
-      if (
-        document.visibilityState === "visible" &&
-        musicStarted &&
-        bgMusic.paused
-      ) {
-        bgMusic.play().catch(() => {});
+    document.addEventListener(
+      "touchstart",
+      function startMusicTouch() {
+
+        tryPlayMusic();
+
+        document.removeEventListener(
+          "touchstart",
+          startMusicTouch
+        );
+
+      },
+      {
+        passive: true
       }
+    );
 
-    });
   </script>
 
+
 </body>
+
 </html>
